@@ -6,6 +6,7 @@ import EventSchedule from '@/components/EventSchedule';
 import PrizesSection from '@/components/PrizesSection';
 import RegistrationSection from '@/components/RegistrationSection';
 import ContactSection from '@/components/ContactSection';
+import CreditsSection from '@/components/CreditsSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -57,6 +58,10 @@ const Index = () => {
         
         <section id="contact">
           <ContactSection />
+        </section>
+        
+        <section id="credits">
+          <CreditsSection />
         </section>
       </main>
       

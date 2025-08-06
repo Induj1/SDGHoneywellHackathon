@@ -1,6 +1,9 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Trophy, Medal, Award, Gift, Users, Star } from 'lucide-react';
+import sdgLogo from '@/assets/sdg-logo.png';
+import mitLogo from '@/assets/mit-logo.png';
+import honeywellLogo from '@/assets/honeywell-logo.svg';
 
 const prizes = [
   {
@@ -58,21 +61,21 @@ const sponsors = [
     type: "Title Sponsor",
     name: "Honeywell",
     description: "Global technology leader in aerospace and industrial automation",
-    logo: "🏢",
+    logo: honeywellLogo,
     contribution: "₹1.5L Prize Pool + Internships + Mentorship"
   },
   {
     type: "Venue Partner",
     name: "MIT Bengaluru",
     description: "Premier engineering institution fostering innovation",
-    logo: "🎓", 
+    logo: mitLogo, 
     contribution: "World-class facilities + Faculty support"
   },
   {
     type: "Organizing Partner",
     name: "SDG Club",
     description: "Driving sustainable development through technology",
-    logo: "🌍",
+    logo: sdgLogo,
     contribution: "Event management + Student community"
   }
 ];
@@ -170,7 +173,13 @@ export default function PrizesSection() {
                     {sponsor.type}
                   </Badge>
                   
-                  <div className="text-4xl mb-4">{sponsor.logo}</div>
+                  <div className="mb-4 flex justify-center">
+                    <img 
+                      src={sponsor.logo} 
+                      alt={sponsor.name} 
+                      className="h-16 w-auto filter brightness-110"
+                    />
+                  </div>
                   <h4 className="text-xl font-bold mb-3 text-foreground">{sponsor.name}</h4>
                   <p className="text-muted-foreground mb-4 text-sm">{sponsor.description}</p>
                   

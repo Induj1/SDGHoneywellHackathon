@@ -10,7 +10,8 @@ const navItems = [
   { name: 'Schedule', href: '#schedule' },
   { name: 'Prizes', href: '#prizes' },
   { name: 'Register', href: '#register' },
-  { name: 'Contact', href: '#contact' }
+  { name: 'Contact', href: '#contact' },
+  { name: 'Credits', href: '#credits' }
 ];
 
 export default function Navigation() {
@@ -64,7 +65,7 @@ export default function Navigation() {
           {/* CTA & Mobile Menu */}
           <div className="flex items-center gap-4">
             <Badge variant="outline" className="hidden sm:flex text-primary border-primary/50">
-              Sept 27-29
+              Sept 26-28
             </Badge>
             
             <Button 

@@ -4,6 +4,9 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Calendar, MapPin, Users, Trophy, ArrowRight, Sparkles } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
+import sdgLogo from '@/assets/sdg-logo.png';
+import mitLogo from '@/assets/mit-logo.png';
+import honeywellLogo from '@/assets/honeywell-logo.svg';
 import { 
   InteractiveParticleField, 
   EnhancedDataStreamEffect, 
@@ -63,7 +66,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
 };
 
 export default function HeroSection() {
-  const hackathonDate = new Date('2025-09-27T09:00:00');
+  const hackathonDate = new Date('2025-09-26T09:00:00');
   const [isLoaded, setIsLoaded] = useState(false);
   useScrollAnimation();
 
@@ -119,6 +122,46 @@ export default function HeroSection() {
       <div className="relative z-10 container mx-auto px-4 pt-24 text-center">
         <StaggeredAnimationContainer staggerDelay={200}>
           <div className={`reveal-up transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
+            
+            {/* Partner Logos */}
+            <div className="reveal-up mb-12">
+              <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-6">
+                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
+                    <img 
+                      src={sdgLogo} 
+                      alt="SDG Club MIT Bengaluru" 
+                      className="h-20 md:h-24 w-auto filter brightness-110"
+                    />
+                  </div> 
+                </Enhanced3DMagneticElement>
+                
+                <div className="text-white/60 text-2xl font-light">×</div>
+                
+                {/* <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
+                    <img 
+                      src={honeywellLogo} 
+                      alt="Honeywell" 
+                      className="h-16 md:h-20 w-auto filter brightness-110"
+                    />
+                  </div>
+                </Enhanced3DMagneticElement>
+                
+                <div className="text-white/60 text-2xl font-light">×</div> */}
+                
+                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
+                    <img 
+                      src={mitLogo} 
+                      alt="Manipal Institute of Technology Bengaluru" 
+                      className="h-16 md:h-20 w-auto filter brightness-110"
+                    />
+                  </div>
+                </Enhanced3DMagneticElement>
+              </div>
+            </div>
+
             <div className="reveal-scale mb-8">
               <h1 className="text-5xl md:text-8xl font-bold mb-6 leading-tight">
                 <span className="text-gradient-primary animate-hologram-flicker block">
@@ -128,7 +171,7 @@ export default function HeroSection() {
                   Hackathon
                 </span>
                 <span className="text-gradient-secondary block">
-                  2025
+                
                 </span>
               </h1>
             </div>
@@ -141,9 +184,9 @@ export default function HeroSection() {
 
             <div className="reveal-up mb-12">
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Organized by <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">SDG Club, MIT Bengaluru</span>
+                Organized by: <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">SDG MITBLR</span>
                 <br className="hidden md:block" />
-                in collaboration with <span className="text-secondary font-bold bg-secondary/10 px-2 py-1 rounded-lg">Honeywell</span>
+                & <span className="text-secondary font-bold bg-secondary/10 px-2 py-1 rounded-lg">School of Computer Science & Engineering, MIT, MAHE Bengaluru</span>
               </p>
             </div>
 

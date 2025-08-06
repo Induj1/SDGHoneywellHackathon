@@ -5,7 +5,7 @@ import { Calendar, Clock, MapPin, Users, Trophy, Lightbulb, Code, Presentation }
 const scheduleData = [
   {
     day: "Day 1",
-    date: "27th September 2025",
+    date: "26th September 2025",
     color: "primary",
     icon: <Lightbulb className="w-5 h-5" />,
     events: [
@@ -20,7 +20,7 @@ const scheduleData = [
   },
   {
     day: "Day 2", 
-    date: "28th September 2025",
+    date: "27th September 2025",
     color: "secondary",
     icon: <Code className="w-5 h-5" />,
     events: [
@@ -35,7 +35,7 @@ const scheduleData = [
   },
   {
     day: "Day 3",
-    date: "29th September 2025", 
+    date: "28th September 2025", 
     color: "accent",
     icon: <Presentation className="w-5 h-5" />,
     events: [
