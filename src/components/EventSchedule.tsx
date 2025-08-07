@@ -1,73 +1,73 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Calendar, Clock, MapPin, Users, Trophy, Lightbulb, Code, Presentation } from 'lucide-react';
+import { Calendar, Clock, MapPin, Users, Trophy, Lightbulb, Code, Presentation, Target, CheckCircle } from 'lucide-react';
+import { useEffect, useState, useRef } from 'react';
 
 const scheduleData = [
   {
     day: "Day 1",
-    date: "26th September 2025",
+    date: "25th September 2025",
     color: "primary",
     icon: <Lightbulb className="w-5 h-5" />,
     events: [
-      { time: "09:00 AM", title: "Registration & Welcome", description: "Check-in and opening ceremony" },
-      { time: "10:30 AM", title: "Inauguration", description: "Keynote by Honeywell executives" },
-      { time: "12:00 PM", title: "Problem Statement Release", description: "Aerospace & automation challenges revealed" },
-      { time: "01:00 PM", title: "Team Formation", description: "Network and form your dream team" },
-      { time: "02:30 PM", title: "Lunch Break", description: "Networking lunch with mentors" },
-      { time: "04:00 PM", title: "Ideation Session", description: "Brainstorm solutions with mentors" },
-      { time: "06:00 PM", title: "Day 1 Wrap-up", description: "Present initial ideas" }
+      { time: "4:00 PM - 4:15 PM", title: "Welcome address by JSSATEB (Teams)", description: "Opening ceremony and welcome" },
+      { time: "4:15 PM - 4:40 PM", title: "Honeywell presentation by Honorary Leaders (Zoom)", description: "Keynote presentation by Honeywell executives" },
+      { time: "4:40 PM - 5:40 PM", title: "PROBLEM STATEMENTS Overview by SMEs", description: "Detailed problem statement briefing" },
+      { time: "5:40 PM - 7:40 PM", title: "BREAKOUT ROOMS Clarification and mentoring by SMEs (Microsoft Teams)", description: "Team formation and initial mentoring" },
+      { time: "7:40 PM - 11:00 PM", title: "Commencement of the hack", description: "Start of the hackathon development phase" }
     ]
   },
   {
     day: "Day 2", 
-    date: "27th September 2025",
+    date: "26th September 2025",
     color: "secondary",
     icon: <Code className="w-5 h-5" />,
     events: [
-      { time: "09:00 AM", title: "Hacking Begins", description: "Start building your solutions" },
-      { time: "11:00 AM", title: "Technical Workshop", description: "Honeywell tech stack deep dive" },
-      { time: "01:00 PM", title: "Lunch & Mentorship", description: "One-on-one mentor sessions" },
-      { time: "03:00 PM", title: "Mid-point Check-in", description: "Progress review with judges" },
-      { time: "05:00 PM", title: "Technical Support", description: "Expert guidance available" },
-      { time: "07:00 PM", title: "Dinner", description: "Fuel up for the final stretch" },
-      { time: "10:00 PM", title: "Midnight Coding", description: "24/7 support available" }
+      { time: "11:00 AM - 1:00 PM", title: "FIRST CHECKPOINT Feedback to the teams (Microsoft Teams)", description: "Mid-point progress review and feedback" },
+      { time: "1:00 PM - 5:00 PM", title: "Hackathon resumes", description: "Continued development and coding phase" }
     ]
   },
   {
     day: "Day 3",
-    date: "28th September 2025", 
+    date: "27th September 2025", 
     color: "accent",
     icon: <Presentation className="w-5 h-5" />,
     events: [
-      { time: "09:00 AM", title: "Final Development", description: "Last chance to polish your solution" },
-      { time: "12:00 PM", title: "Submission Deadline", description: "Submit your final projects" },
-      { time: "01:00 PM", title: "Lunch Break", description: "Prepare for presentations" },
-      { time: "02:30 PM", title: "Project Presentations", description: "Showcase your innovations" },
-      { time: "05:00 PM", title: "Judging & Deliberation", description: "Expert panel evaluates projects" },
-      { time: "06:30 PM", title: "Award Ceremony", description: "Winners announcement & prizes" },
-      { time: "07:30 PM", title: "Closing Ceremony", description: "Networking & celebration" }
+      { time: "9:00 AM - 11:00 AM", title: "SECOND CHECKPOINT Evaluation by SMEs (Microsoft Teams)", description: "Final checkpoint and evaluation" },
+      { time: "11:00 AM - 11:30 AM", title: "Shortlisting top 10 teams (SMEs)", description: "Selection of finalist teams" },
+      { time: "11:30 AM - 11:45 AM", title: "Mail regarding top 10 teams (Email)", description: "Notification to selected teams" },
+      { time: "11:45 AM - 1:30 PM", title: "Demo preparations by top 10 teams", description: "Preparation time for final presentations" },
+      { time: "1:30 PM - 3:30 PM", title: "Demonstration to THE judges 10 minutes per team (Microsoft Teams)", description: "Final project presentations" },
+      { time: "3:30 PM - 4:30 PM", title: "Final review and shortlisting the winners (SMEs)", description: "Judging and winner selection" },
+      { time: "4:30 PM - 5:00 PM", title: "Winner announcement & wrap up (Teams)", description: "Award ceremony and closing" }
     ]
   }
 ];
 
 const themes = [
   {
-    title: "Aerospace Innovations",
-    description: "Next-gen flight systems, sustainable aviation, autonomous aircraft",
-    icon: "🚁",
-    tags: ["Flight Systems", "Autonomous Tech", "Sustainability"]
+    title: "Artificial Intelligence",
+    description: "Machine learning, neural networks, and intelligent automation solutions",
+    icon: "🧠",
+    tags: ["Machine Learning", "Neural Networks", "AI Automation"]
   },
   {
-    title: "Industrial Automation",
-    description: "Smart manufacturing, IoT solutions, predictive maintenance",
-    icon: "🏭", 
-    tags: ["Smart Manufacturing", "IoT", "AI/ML"]
+    title: "Internet of Things",
+    description: "Connected devices, smart sensors, and IoT ecosystem development",
+    icon: "📡",
+    tags: ["Smart Sensors", "Connected Devices", "IoT Platforms"]
   },
   {
-    title: "Sustainable Tech Solutions",
-    description: "Green technology, energy efficiency, environmental impact",
-    icon: "🌱",
-    tags: ["Green Tech", "Energy Efficiency", "Climate"]
+    title: "Machine Learning",
+    description: "Predictive analytics, data modeling, and intelligent algorithms",
+    icon: "🔗",
+    tags: ["Predictive Analytics", "Data Science", "Algorithms"]
+  },
+  {
+    title: "Edge Computing & Analytics",
+    description: "Real-time processing, distributed computing, and edge intelligence",
+    icon: "⚡",
+    tags: ["Real-time Processing", "Edge Intelligence", "Distributed Systems"]
   }
 ];
 
@@ -81,8 +81,47 @@ const rules = [
 ];
 
 export default function EventSchedule() {
+  const [activeDay, setActiveDay] = useState(0);
+  const [visibleEvents, setVisibleEvents] = useState<Set<string>>(new Set());
+  const timelineRef = useRef<HTMLDivElement>(null);
+  const eventRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!timelineRef.current) return;
+
+      const rect = timelineRef.current.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const timelineHeight = timelineRef.current.offsetHeight;
+      
+      // Calculate timeline progress based on scroll position
+      const scrollProgress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (viewportHeight + timelineHeight)));
+      
+      // Update active day based on scroll progress
+      const newActiveDay = Math.floor(scrollProgress * scheduleData.length);
+      setActiveDay(Math.min(newActiveDay, scheduleData.length - 1));
+
+      // Check which events are visible
+      const newVisibleEvents = new Set<string>();
+      eventRefs.current.forEach((ref, index) => {
+        if (ref) {
+          const eventRect = ref.getBoundingClientRect();
+          if (eventRect.top < viewportHeight && eventRect.bottom > 0) {
+            newVisibleEvents.add(`${Math.floor(index / 4)}-${index % 4}`);
+          }
+        }
+      });
+      setVisibleEvents(newVisibleEvents);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial call
+    
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <section className="py-20 bg-background relative">
+    <section className="py-20 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-on-scroll">
@@ -94,53 +133,168 @@ export default function EventSchedule() {
             <span className="text-gradient-secondary">Innovation</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            A comprehensive schedule designed to maximize learning, collaboration, and innovation
+            Follow the journey from ideation to execution in our interactive timeline
           </p>
         </div>
 
-        {/* Schedule Timeline */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-20">
-          {scheduleData.map((day, index) => (
-            <Card key={index} className="tech-card border-0 animate-on-scroll" style={{ animationDelay: `${index * 0.2}s` }}>
-              <CardHeader className="text-center pb-4">
-                <div className={`w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-${day.color}/20 to-${day.color}-glow/20 flex items-center justify-center mb-4`}>
-                  {day.icon}
-                </div>
-                <CardTitle className="text-xl font-bold text-foreground">{day.day}</CardTitle>
-                <p className="text-muted-foreground">{day.date}</p>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {day.events.map((event, i) => (
-                    <div key={i} className="flex gap-3 p-3 rounded-lg bg-card/30 border border-border/30">
-                      <div className="flex-shrink-0">
-                        <Clock className="w-4 h-4 text-primary mt-1" />
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-sm font-medium text-foreground">{event.time}</span>
-                          <span className="text-xs text-muted-foreground">•</span>
-                          <span className="text-sm font-semibold text-foreground">{event.title}</span>
-                        </div>
-                        <p className="text-xs text-muted-foreground">{event.description}</p>
+        {/* Interactive Timeline */}
+        <div ref={timelineRef} className="relative">
+          {/* Central Timeline Line */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary/20 via-primary to-primary/20 hidden lg:block">
+            {/* Progress indicator */}
+            <div 
+              className="absolute top-0 left-0 w-full bg-gradient-to-b from-primary to-accent transition-all duration-500 ease-out"
+              style={{ 
+                height: `${Math.min(100, (activeDay + 1) / scheduleData.length * 100)}%`,
+                boxShadow: '0 0 20px rgba(var(--primary), 0.5)'
+              }}
+            />
+          </div>
+
+          {/* Timeline Events */}
+          <div className="space-y-32">
+            {scheduleData.map((day, dayIndex) => (
+              <div key={dayIndex} className="relative">
+                {/* Day Header */}
+                <div className="flex items-center justify-center mb-16">
+                  <div 
+                    className={`relative flex items-center gap-6 transition-all duration-700 ${
+                      dayIndex <= activeDay ? 'scale-100 opacity-100' : 'scale-90 opacity-60'
+                    }`}
+                  >
+                    {/* Timeline Node */}
+                    <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                      <div 
+                        className={`w-16 h-16 rounded-full bg-gradient-to-br transition-all duration-500 flex items-center justify-center ${
+                          dayIndex <= activeDay 
+                            ? `from-${day.color} to-${day.color}-glow shadow-lg shadow-${day.color}/50` 
+                            : 'from-muted to-muted-foreground/20'
+                        }`}
+                      >
+                        {dayIndex <= activeDay ? (
+                          day.icon
+                        ) : (
+                          <div className="w-3 h-3 rounded-full bg-muted-foreground/50" />
+                        )}
                       </div>
                     </div>
-                  ))}
+
+                    {/* Day Info Card */}
+                    <Card 
+                      className={`tech-card border-0 transition-all duration-700 ${
+                        dayIndex <= activeDay ? 'scale-100 opacity-100' : 'scale-95 opacity-70'
+                      }`}
+                    >
+                      <CardHeader className="text-center">
+                        <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br flex items-center justify-center mb-4 transition-all duration-500 ${
+                          dayIndex <= activeDay 
+                            ? `from-${day.color}/20 to-${day.color}-glow/20 shadow-md` 
+                            : 'from-muted/20 to-muted-foreground/10'
+                        }`}>
+                          {day.icon}
+                        </div>
+                        <CardTitle className="text-2xl font-bold text-foreground">{day.day}</CardTitle>
+                        <p className="text-muted-foreground flex items-center gap-2 justify-center">
+                          <Calendar className="w-4 h-4" />
+                          {day.date}
+                        </p>
+                      </CardHeader>
+                    </Card>
+                  </div>
                 </div>
-              </CardContent>
+
+                {/* Events Grid */}
+                <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                  {day.events.map((event, eventIndex) => {
+                    const globalIndex = dayIndex * 4 + eventIndex;
+                    const isVisible = visibleEvents.has(`${dayIndex}-${eventIndex}`);
+                    const isLeft = eventIndex % 2 === 0;
+                    
+                    return (
+                      <div
+                        key={eventIndex}
+                        ref={el => eventRefs.current[globalIndex] = el}
+                        className={`relative transition-all duration-700 ${
+                          isLeft ? 'lg:pr-16' : 'lg:pl-16'
+                        } ${
+                          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-30'
+                        }`}
+                        style={{ 
+                          transitionDelay: `${eventIndex * 150}ms`,
+                          transform: `translateX(${isVisible ? '0' : isLeft ? '-20px' : '20px'}) translateY(${isVisible ? '0' : '20px'})`
+                        }}
+                      >
+                        {/* Connection Line to Timeline */}
+                        <div className={`hidden lg:block absolute top-1/2 w-16 h-0.5 bg-gradient-to-r transition-all duration-500 ${
+                          isLeft ? 'right-0' : 'left-0'
+                        } ${
+                          isVisible 
+                            ? `from-${day.color}/50 to-transparent` 
+                            : 'from-muted/30 to-transparent'
+                        }`} />
+
+                        <Card className={`tech-card border-0 h-full transition-all duration-500 ${
+                          isVisible ? 'shadow-lg' : 'shadow-sm'
+                        }`}>
+                          <CardContent className="p-6">
+                            <div className="flex items-start gap-4">
+                              <div className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center transition-all duration-500 ${
+                                isVisible 
+                                  ? `from-${day.color}/20 to-${day.color}-glow/20 shadow-md` 
+                                  : 'from-muted/20 to-muted-foreground/10'
+                              }`}>
+                                <Clock className={`w-5 h-5 transition-colors duration-500 ${
+                                  isVisible ? 'text-primary' : 'text-muted-foreground'
+                                }`} />
+                              </div>
+                              <div className="flex-1">
+                                <div className="flex items-center gap-2 mb-2">
+                                  <span className="text-sm font-medium text-foreground bg-muted/50 px-2 py-1 rounded-md">
+                                    {event.time}
+                                  </span>
+                                  {isVisible && (
+                                    <CheckCircle className="w-4 h-4 text-green-500 animate-pulse" />
+                                  )}
+                                </div>
+                                <h4 className="text-lg font-semibold text-foreground mb-2">{event.title}</h4>
+                                <p className="text-sm text-muted-foreground leading-relaxed">{event.description}</p>
+                              </div>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Progress Indicator */}
+          <div className="fixed bottom-8 right-8 z-50">
+            <Card className="tech-card border-0 p-4">
+              <div className="flex items-center gap-3">
+                <Target className="w-5 h-5 text-primary" />
+                <div>
+                  <p className="text-xs text-muted-foreground">Progress</p>
+                  <p className="text-sm font-semibold text-foreground">
+                    Day {activeDay + 1} of {scheduleData.length}
+                  </p>
+                </div>
+              </div>
             </Card>
-          ))}
+          </div>
         </div>
 
         {/* Problem Statement Themes */}
-        <div className="mb-20 animate-on-scroll">
+        <div className="mt-32 mb-20 animate-on-scroll">
           <h3 className="text-2xl md:text-4xl font-bold text-center mb-12">
-            Problem Statement <span className="text-gradient-tech">Themes</span>
+            Hackathon <span className="text-gradient-tech">Domains</span>
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {themes.map((theme, index) => (
-              <Card key={index} className="tech-card border-0 text-center">
+              <Card key={index} className="tech-card border-0 text-center hover:scale-105 transition-transform duration-300">
                 <CardContent className="p-8">
                   <div className="text-4xl mb-4">{theme.icon}</div>
                   <h4 className="text-xl font-bold mb-3 text-foreground">{theme.title}</h4>

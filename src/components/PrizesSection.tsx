@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Trophy, Medal, Award, Gift, Users, Star } from 'lucide-react';
+import { Trophy, Medal, Award, Gift } from 'lucide-react';
 import sdgLogo from '@/assets/sdg-logo.png';
 import mitLogo from '@/assets/mit-logo.png';
 import honeywellLogo from '@/assets/honeywell-logo.svg';
@@ -12,8 +12,7 @@ const prizes = [
     icon: <Trophy className="w-8 h-8" />,
     color: "from-yellow-400 to-yellow-600",
     textColor: "text-yellow-400",
-    bgColor: "from-yellow-400/20 to-yellow-600/20",
-    perks: ["Cash Prize", "Honeywell Internship", "Mentorship Program", "Premium Merchandise"]
+    bgColor: "from-yellow-400/20 to-yellow-600/20"
   },
   {
     position: "2nd Place", 
@@ -21,8 +20,7 @@ const prizes = [
     icon: <Medal className="w-8 h-8" />,
     color: "from-gray-300 to-gray-500",
     textColor: "text-gray-300",
-    bgColor: "from-gray-300/20 to-gray-500/20",
-    perks: ["Cash Prize", "Industry Mentorship", "Job Referral", "Honeywell Merchandise"]
+    bgColor: "from-gray-300/20 to-gray-500/20"
   },
   {
     position: "3rd Place",
@@ -30,29 +28,7 @@ const prizes = [
     icon: <Award className="w-8 h-8" />,
     color: "from-amber-600 to-amber-800",
     textColor: "text-amber-600",
-    bgColor: "from-amber-600/20 to-amber-800/20",
-    perks: ["Cash Prize", "Industry Connect", "Certificate", "Honeywell Swag"]
-  }
-];
-
-const specialPrizes = [
-  {
-    title: "Best Innovation",
-    description: "Most creative and innovative solution",
-    prize: "₹15,000",
-    icon: <Star className="w-6 h-6" />
-  },
-  {
-    title: "Best Technical Implementation", 
-    description: "Outstanding technical execution",
-    prize: "₹15,000",
-    icon: <Gift className="w-6 h-6" />
-  },
-  {
-    title: "Best Business Impact",
-    description: "Solution with highest market potential", 
-    prize: "₹10,000",
-    icon: <Users className="w-6 h-6" />
+    bgColor: "from-amber-600/20 to-amber-800/20"
   }
 ];
 
@@ -120,43 +96,12 @@ export default function PrizesSection() {
                 </div>
                 
                 <h3 className="text-xl font-bold mb-2 text-foreground">{prize.position}</h3>
-                <div className={`text-3xl font-bold mb-6 bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
+                <div className={`text-3xl font-bold bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
                   {prize.amount}
-                </div>
-                
-                <div className="space-y-2">
-                  {prize.perks.map((perk, i) => (
-                    <div key={i} className="flex items-center gap-2 text-sm justify-center">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                      <span className="text-muted-foreground">{perk}</span>
-                    </div>
-                  ))}
                 </div>
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Special Prizes */}
-        <div className="mb-20 animate-on-scroll">
-          <h3 className="text-2xl md:text-4xl font-bold text-center mb-12">
-            Special <span className="text-gradient-secondary">Awards</span>
-          </h3>
-          
-          <div className="grid md:grid-cols-3 gap-6">
-            {specialPrizes.map((award, index) => (
-              <Card key={index} className="tech-card border-0">
-                <CardContent className="p-6 text-center">
-                  <div className="w-12 h-12 mx-auto rounded-xl bg-gradient-to-br from-secondary/20 to-secondary-glow/20 flex items-center justify-center mb-4 text-secondary">
-                    {award.icon}
-                  </div>
-                  <h4 className="font-bold text-foreground mb-2">{award.title}</h4>
-                  <p className="text-sm text-muted-foreground mb-3">{award.description}</p>
-                  <div className="text-lg font-bold text-gradient-secondary">{award.prize}</div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
 
         {/* Sponsors Section */}

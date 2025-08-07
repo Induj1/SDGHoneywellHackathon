@@ -7,6 +7,7 @@ import heroBg from '@/assets/hero-bg.jpg';
 import sdgLogo from '@/assets/sdg-logo.png';
 import mitLogo from '@/assets/mit-logo.png';
 import honeywellLogo from '@/assets/honeywell-logo.svg';
+import acmLogo from '@/assets/acm-logo.png';
 import { 
   InteractiveParticleField, 
   EnhancedDataStreamEffect, 
@@ -66,7 +67,7 @@ const Countdown = ({ targetDate }: CountdownProps) => {
 };
 
 export default function HeroSection() {
-  const hackathonDate = new Date('2025-09-26T09:00:00');
+  const hackathonDate = new Date('2025-09-25T16:00:00');
   const [isLoaded, setIsLoaded] = useState(false);
   useScrollAnimation();
 
@@ -138,18 +139,6 @@ export default function HeroSection() {
                 
                 <div className="text-white/60 text-2xl font-light">×</div>
                 
-                {/* <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
-                    <img 
-                      src={honeywellLogo} 
-                      alt="Honeywell" 
-                      className="h-16 md:h-20 w-auto filter brightness-110"
-                    />
-                  </div>
-                </Enhanced3DMagneticElement>
-                
-                <div className="text-white/60 text-2xl font-light">×</div> */}
-                
                 <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
                     <img 
@@ -159,14 +148,30 @@ export default function HeroSection() {
                     />
                   </div>
                 </Enhanced3DMagneticElement>
+                
+                <div className="text-white/60 text-2xl font-light">×</div>
+                
+                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
+                    <img 
+                      src={acmLogo} 
+                      alt="ACM MIT Bengaluru" 
+                      className="h-16 md:h-20 w-auto filter brightness-110"
+                    />
+                  </div>
+                </Enhanced3DMagneticElement>
               </div>
             </div>
 
             <div className="reveal-scale mb-8">
               <h1 className="text-5xl md:text-8xl font-bold mb-6 leading-tight">
-                <span className="text-gradient-primary animate-hologram-flicker block">
-                  Honeywell
-                </span>
+                <div className="flex justify-center items-center mb-4">
+                  <img 
+                    src={honeywellLogo} 
+                    alt="Honeywell" 
+                    className="h-16 md:h-24 w-auto filter brightness-110"
+                  />
+                </div>
                 <span className="text-foreground block my-2">
                   Hackathon
                 </span>
@@ -184,9 +189,9 @@ export default function HeroSection() {
 
             <div className="reveal-up mb-12">
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Organized by: <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">SDG MITBLR</span>
+                Organized by: <span className="text-secondary font-bold bg-secondary/10 px-2 py-1 rounded-lg">School of Computer Engineering, MIT, MAHE Bengaluru</span>
                 <br className="hidden md:block" />
-                & <span className="text-secondary font-bold bg-secondary/10 px-2 py-1 rounded-lg">School of Computer Science & Engineering, MIT, MAHE Bengaluru</span>
+                & <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">SDG MITBLR</span>
               </p>
             </div>
 

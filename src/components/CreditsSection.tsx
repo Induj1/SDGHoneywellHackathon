@@ -17,39 +17,71 @@ export default function CreditsSection() {
               Organizer Credits
             </h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
-                <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 transition-all duration-500 text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    Prof. (Dr.) Dayananda P
-                  </h3>
-                  <p className="text-muted-foreground font-medium">
-                    Dean, MIT Bengaluru
-                  </p>
-                </div>
-              </Enhanced3DMagneticElement>
+            {/* Faculty & Leadership */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold text-center mb-8 text-gradient-secondary">Faculty & Leadership</h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      Prof. (Dr.) Dayananda P
+                    </h3>
+                    <p className="text-muted-foreground font-medium">
+                      Dean, MIT Bengaluru
+                    </p>
+                  </div>
+                </Enhanced3DMagneticElement>
 
-              <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
-                <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    Mr. Induj Gupta
-                  </h3>
-                  <p className="text-muted-foreground font-medium">
-                    President, SDG Club, MIT Bengaluru
-                  </p>
-                </div>
-              </Enhanced3DMagneticElement>
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      Dr. Shipa Ankalaki
+                    </h3>
+                    <p className="text-muted-foreground font-medium">
+                      Assistant Professor - Senior Scale<br/>MAHE, MIT Bengaluru
+                    </p>
+                  </div>
+                </Enhanced3DMagneticElement>
 
-              <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
-                <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
-                  <h3 className="text-xl font-bold text-foreground mb-2">
-                    Miss. Akshita Oberoi
-                  </h3>
-                  <p className="text-muted-foreground font-medium">
-                    Vice President, SDG Club, MIT Bengaluru
-                  </p>
-                </div>
-              </Enhanced3DMagneticElement>
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      Dr. Geetabai Hukkeri
+                    </h3>
+                    <p className="text-muted-foreground font-medium">
+                      Assistant Professor<br/>MAHE, MIT Bengaluru
+                    </p>
+                  </div>
+                </Enhanced3DMagneticElement>
+              </div>
+            </div>
+
+            {/* Student Leadership */}
+            <div>
+              <h3 className="text-2xl font-bold text-center mb-8 text-gradient-tech">Student Leadership</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      Mr. Induj Gupta
+                    </h3>
+                    <p className="text-muted-foreground font-medium">
+                      President, SDG Club, MIT Bengaluru
+                    </p>
+                  </div>
+                </Enhanced3DMagneticElement>
+
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">
+                      Miss. Akshita Oberoi
+                    </h3>
+                    <p className="text-muted-foreground font-medium">
+                      Vice President, SDG Club, MIT Bengaluru
+                    </p>
+                  </div>
+                </Enhanced3DMagneticElement>
+              </div>
             </div>
           </div>
 
