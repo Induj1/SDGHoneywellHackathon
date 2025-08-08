@@ -10,10 +10,10 @@ const scheduleData = [
     color: "primary",
     icon: <Lightbulb className="w-5 h-5" />,
     events: [
-      { time: "4:00 PM - 4:15 PM", title: "Welcome address by JSSATEB (Teams)", description: "Opening ceremony and welcome" },
-      { time: "4:15 PM - 4:40 PM", title: "Honeywell presentation by Honorary Leaders (Zoom)", description: "Keynote presentation by Honeywell executives" },
+      { time: "4:00 PM - 4:15 PM", title: "Welcome address", description: "Opening ceremony and welcome" },
+      { time: "4:15 PM - 4:40 PM", title: "Honeywell presentation by Honorary Leaders", description: "Keynote presentation by Honeywell executives" },
       { time: "4:40 PM - 5:40 PM", title: "PROBLEM STATEMENTS Overview by SMEs", description: "Detailed problem statement briefing" },
-      { time: "5:40 PM - 7:40 PM", title: "BREAKOUT ROOMS Clarification and mentoring by SMEs (Microsoft Teams)", description: "Team formation and initial mentoring" },
+      { time: "5:40 PM - 7:40 PM", title: "BREAKOUT ROOMS Clarification and mentoring by SMEs", description: "Team formation and initial mentoring" },
       { time: "7:40 PM - 11:00 PM", title: "Commencement of the hack", description: "Start of the hackathon development phase" }
     ]
   },
@@ -23,7 +23,7 @@ const scheduleData = [
     color: "secondary",
     icon: <Code className="w-5 h-5" />,
     events: [
-      { time: "11:00 AM - 1:00 PM", title: "FIRST CHECKPOINT Feedback to the teams (Microsoft Teams)", description: "Mid-point progress review and feedback" },
+      { time: "11:00 AM - 1:00 PM", title: "FIRST CHECKPOINT Feedback to the teams ", description: "Mid-point progress review and feedback" },
       { time: "1:00 PM - 5:00 PM", title: "Hackathon resumes", description: "Continued development and coding phase" }
     ]
   },
@@ -33,13 +33,13 @@ const scheduleData = [
     color: "accent",
     icon: <Presentation className="w-5 h-5" />,
     events: [
-      { time: "9:00 AM - 11:00 AM", title: "SECOND CHECKPOINT Evaluation by SMEs (Microsoft Teams)", description: "Final checkpoint and evaluation" },
+      { time: "9:00 AM - 11:00 AM", title: "SECOND CHECKPOINT Evaluation by SMEs", description: "Final checkpoint and evaluation" },
       { time: "11:00 AM - 11:30 AM", title: "Shortlisting top 10 teams (SMEs)", description: "Selection of finalist teams" },
       { time: "11:30 AM - 11:45 AM", title: "Mail regarding top 10 teams (Email)", description: "Notification to selected teams" },
       { time: "11:45 AM - 1:30 PM", title: "Demo preparations by top 10 teams", description: "Preparation time for final presentations" },
-      { time: "1:30 PM - 3:30 PM", title: "Demonstration to THE judges 10 minutes per team (Microsoft Teams)", description: "Final project presentations" },
+      { time: "1:30 PM - 3:30 PM", title: "Demonstration to THE judges 10 minutes per team ", description: "Final project presentations" },
       { time: "3:30 PM - 4:30 PM", title: "Final review and shortlisting the winners (SMEs)", description: "Judging and winner selection" },
-      { time: "4:30 PM - 5:00 PM", title: "Winner announcement & wrap up (Teams)", description: "Award ceremony and closing" }
+      { time: "4:30 PM - 5:00 PM", title: "Winner announcement & wrap up", description: "Award ceremony and closing" }
     ]
   }
 ];

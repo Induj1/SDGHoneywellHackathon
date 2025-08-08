@@ -17,12 +17,12 @@ export default function CreditsSection() {
               Organizer Credits
             </h2>
             
-            {/* Faculty & Leadership */}
-            <div className="mb-12">
-              <h3 className="text-2xl font-bold text-center mb-8 text-gradient-secondary">Faculty & Leadership</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {/* Event Convenor */}
+            <div className="mb-16">
+              <h3 className="text-2xl font-bold text-center mb-8 text-gradient-primary">Event Convenor</h3>
+              <div className="flex justify-center">
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
-                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 transition-all duration-500 text-center">
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 transition-all duration-500 text-center max-w-md">
                     <h3 className="text-xl font-bold text-foreground mb-2">
                       Prof. (Dr.) Dayananda P
                     </h3>
@@ -31,7 +31,13 @@ export default function CreditsSection() {
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
-
+              </div>
+            </div>
+            
+            {/* Faculty & Leadership */}
+            <div className="mb-12">
+              <h3 className="text-2xl font-bold text-center mb-8 text-gradient-secondary">Faculty & Leadership</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
                     <h3 className="text-xl font-bold text-foreground mb-2">

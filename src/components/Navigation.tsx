@@ -65,7 +65,7 @@ export default function Navigation() {
           {/* CTA & Mobile Menu */}
           <div className="flex items-center gap-4">
             <Badge variant="outline" className="hidden sm:flex text-primary border-primary/50">
-              Sept 26-28
+              Sept 25-27
             </Badge>
             
             <Button 
