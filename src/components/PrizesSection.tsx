@@ -39,7 +39,7 @@ const sponsors = [
     name: "Honeywell",
     description: "Global technology leader in aerospace and industrial automation",
     logo: honeywellLogo,
-    contribution: "₹1.5L Prize Pool + Internships + Mentorship"
+    contribution: "₹1.5L Prize Pool"
   },
   {
     type: "Venue Partner",
