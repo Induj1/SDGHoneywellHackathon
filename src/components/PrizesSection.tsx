@@ -4,6 +4,7 @@ import { Trophy, Medal, Award, Gift } from 'lucide-react';
 import sdgLogo from '@/assets/sdg-logo.png';
 import mitLogo from '@/assets/mit-logo.png';
 import honeywellLogo from '@/assets/honeywell-logo.svg';
+import acmLogo from '@/assets/acm-logo.png';
 
 const prizes = [
   {
@@ -53,6 +54,13 @@ const sponsors = [
     description: "Driving sustainable development through technology",
     logo: sdgLogo,
     contribution: "Event management + Student community"
+  },
+  {
+    type: "Collaborating Partner", 
+    name: "ACM MIT Bengaluru",
+    description: "Association for Computing Machinery student chapter",
+    logo: acmLogo,
+    contribution: "Technical expertise + Student engagement"
   }
 ];
 
@@ -110,7 +118,7 @@ export default function PrizesSection() {
             Our <span className="text-gradient-tech">Partners</span>
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {sponsors.map((sponsor, index) => (
               <Card key={index} className="tech-card border-0">
                 <CardContent className="p-8 text-center">

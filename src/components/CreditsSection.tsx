@@ -17,6 +17,101 @@ export default function CreditsSection() {
               Organizer Credits
             </h2>
             
+            {/* Patrons & Leadership */}
+            <div className="mb-20">
+              <h3 className="text-2xl md:text-4xl font-bold text-center mb-16 text-gradient-secondary">
+                Patrons & Leadership
+              </h3>
+              
+              <div className="max-w-6xl mx-auto">
+                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
+                  <div className="tech-card p-8 rounded-xl bg-card/30 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/40 transition-all duration-500">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      
+                      {/* Left Column */}
+                      <div className="space-y-6">
+                        <div className="border-b border-border/30 pb-4">
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Dr. Ramdas M Pai
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Chancellor, MAHE
+                          </p>
+                        </div>
+
+                        <div className="border-b border-border/30 pb-4">
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Dr. H.S. Ballal
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Pro-Chancellor, MAHE
+                          </p>
+                        </div>
+
+                        <div className="border-b border-border/30 pb-4">
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Prof. (Dr.) M. Veeraraghavan
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Pro Vice-Chancellor, MAHE Bengaluru
+                          </p>
+                        </div>
+
+                        <div>
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Dr. Narayana Sabhahit
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Registrar, MAHE
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Right Column */}
+                      <div className="space-y-6">
+                        <div className="border-b border-border/30 pb-4">
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Dr. Ranjan R Pai
+                          </h3>
+                          <p className="text-muted-foreground">
+                            President, MAHE
+                          </p>
+                        </div>
+
+                        <div className="border-b border-border/30 pb-4">
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Lt. Gen. (Dr.) M.D. Venkatesh
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Vice-Chancellor, MAHE
+                          </p>
+                        </div>
+
+                        <div className="border-b border-border/30 pb-4">
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Dr. Raghavendra Prabhu
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Deputy Registrar, MAHE Bengaluru
+                          </p>
+                        </div>
+
+                        <div>
+                          <h3 className="text-lg font-bold text-foreground mb-1">
+                            Prof. (Dr.) Iven Jose
+                          </h3>
+                          <p className="text-muted-foreground">
+                            Director, MIT Bengaluru, MAHE
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </Enhanced3DMagneticElement>
+              </div>
+            </div>
+
             {/* Event Convenor */}
             <div className="mb-16">
               <h3 className="text-2xl font-bold text-center mb-8 text-gradient-primary">Event Convenor</h3>
@@ -27,7 +122,7 @@ export default function CreditsSection() {
                       Prof. (Dr.) Dayananda P
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      Dean, MIT Bengaluru
+                      Dean, MIT Bengaluru, MAHE
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
@@ -35,16 +130,16 @@ export default function CreditsSection() {
             </div>
             
             {/* Faculty & Leadership */}
-            <div className="mb-12">
+            <div className="mb-16">
               <h3 className="text-2xl font-bold text-center mb-8 text-gradient-secondary">Faculty & Leadership</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
                     <h3 className="text-xl font-bold text-foreground mb-2">
-                      Dr. Shipa Ankalaki
+                      Dr. Shilpa Ankalaki
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      Assistant Professor - Senior Scale<br/>MAHE, MIT Bengaluru
+                      Assistant Professor - Senior Scale<br/>MIT Bengaluru, MAHE
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
@@ -52,10 +147,10 @@ export default function CreditsSection() {
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
                     <h3 className="text-xl font-bold text-foreground mb-2">
-                      Dr. Geetabai Hukkeri
+                      Dr. Geetabai S Hukkeri
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      Assistant Professor<br/>MAHE, MIT Bengaluru
+                      Assistant Professor<br/>MIT Bengaluru, MAHE
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
@@ -63,7 +158,7 @@ export default function CreditsSection() {
             </div>
 
             {/* Student Leadership */}
-            <div>
+            <div className="mb-16">
               <h3 className="text-2xl font-bold text-center mb-8 text-gradient-tech">Student Leadership</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
@@ -72,7 +167,7 @@ export default function CreditsSection() {
                       Mr. Induj Gupta
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      President, SDG Club, MIT Bengaluru
+                      President, SDG Club, MIT Bengaluru, MAHE
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
@@ -80,10 +175,10 @@ export default function CreditsSection() {
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
                     <h3 className="text-xl font-bold text-foreground mb-2">
-                      Miss. Akshita Oberoi
+                      Ms. Akshita Oberoi
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      Vice President, SDG Club, MIT Bengaluru
+                      Vice President, SDG Club, MIT Bengaluru, MAHE
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
@@ -103,19 +198,19 @@ export default function CreditsSection() {
                   <div className="space-y-4">
                     <div className="border-b border-border/30 pb-3">
                       <h4 className="text-lg font-bold text-foreground mb-1">
-                        Meena Prasad
+                        Ms. Meena Prasad
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        University Relations Manager at Honeywell Technology
+                        University Relations Manager at Honeywell 
                       </p>
                     </div>
 
                     <div>
                       <h4 className="text-lg font-bold text-foreground mb-1">
-                        Almelu Natarajan
+                        Mr. Almelu Natarajan
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        Advanced Software Engineer @ Honeywell
+                        Advanced Software Engineer at Honeywell
                       </p>
                     </div>
                   </div>
@@ -127,7 +222,7 @@ export default function CreditsSection() {
                   <div className="space-y-4">
                     <div className="border-b border-border/30 pb-3">
                       <h4 className="text-lg font-bold text-foreground mb-1">
-                        Divya Swarup
+                        Mr. Divya Swarup
                       </h4>
                       <p className="text-muted-foreground text-sm">
                         Fellow - Aerospace Technologies at Honeywell
@@ -136,10 +231,10 @@ export default function CreditsSection() {
 
                     <div>
                       <h4 className="text-lg font-bold text-foreground mb-1">
-                        Appar Vallikannu
+                       Mr. Appar Vallikannu
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        Building Automation System Analyst
+                        Building Automation System Analyst at honeywell
                       </p>
                     </div>
                   </div>
@@ -232,7 +327,7 @@ export default function CreditsSection() {
                           Prof. (Dr.) Iven Jose
                         </h3>
                         <p className="text-muted-foreground">
-                          Director, MIT Bengaluru
+                          Director, MIT Bengaluru, MAHE
                         </p>
                       </div>
                     </div>

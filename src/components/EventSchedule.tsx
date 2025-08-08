@@ -37,7 +37,7 @@ const scheduleData = [
       { time: "11:00 AM - 11:30 AM", title: "Shortlisting top 10 teams (SMEs)", description: "Selection of finalist teams" },
       { time: "11:30 AM - 11:45 AM", title: "Mail regarding top 10 teams (Email)", description: "Notification to selected teams" },
       { time: "11:45 AM - 1:30 PM", title: "Demo preparations by top 10 teams", description: "Preparation time for final presentations" },
-      { time: "1:30 PM - 3:30 PM", title: "Demonstration to THE judges 10 minutes per team ", description: "Final project presentations" },
+      { time: "1:30 PM - 3:30 PM", title: "Demonstration to the judges 10 minutes per team ", description: "Final project presentations" },
       { time: "3:30 PM - 4:30 PM", title: "Final review and shortlisting the winners (SMEs)", description: "Judging and winner selection" },
       { time: "4:30 PM - 5:00 PM", title: "Winner announcement & wrap up", description: "Award ceremony and closing" }
     ]
