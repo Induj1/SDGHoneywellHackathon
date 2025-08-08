@@ -234,7 +234,7 @@ export default function CreditsSection() {
                        Mr. Appar Vallikannu
                       </h4>
                       <p className="text-muted-foreground text-sm">
-                        Building Automation System Analyst at honeywell
+                        Building Automation System Analyst at Honeywell
                       </p>
                     </div>
                   </div>
