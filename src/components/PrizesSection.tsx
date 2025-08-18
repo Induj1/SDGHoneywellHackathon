@@ -127,12 +127,22 @@ export default function PrizesSection() {
                   </Badge>
                   
                   <div className="mb-4 flex justify-center">
+                    {sponsor.name === "Honeywell" ? (
+                    <span
+                      className="text-white"
+                      style={{ fontFamily: "Times New Roman, serif", fontSize: "64px" }}
+                    >
+                      Honeywell
+                    </span>
+                    ) : (
                     <img 
                       src={sponsor.logo} 
                       alt={sponsor.name} 
                       className="h-16 w-auto filter brightness-110"
                     />
+                    )}
                   </div>
+                  
                   <h4 className="text-xl font-bold mb-3 text-foreground">{sponsor.name}</h4>
                   <p className="text-muted-foreground mb-4 text-sm">{sponsor.description}</p>
                   
