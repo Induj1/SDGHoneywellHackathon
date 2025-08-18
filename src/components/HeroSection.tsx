@@ -168,7 +168,7 @@ export default function HeroSection() {
                 <div className="flex justify-center items-center mb-4">
                   <span
                     className="text-white"
-                    style={{ fontFamily: "Times New Roman, serif", fontSize: "2.5rem" }}
+                    style={{ fontFamily: "Times New Roman, serif", fontSize: "5rem" }}
                   >
                     Honeywell
                   </span>
@@ -176,7 +176,8 @@ export default function HeroSection() {
                 <span className="text-foreground block my-2">
                   Hackathon
                 </span>
-                <span className="text-gradient-secondary block">
+                <span className="text-gradient-secondary block"
+                  style={{ fontSize: "2rem", fontWeight: 600 }}>
     
                 </span>
               </h1>
