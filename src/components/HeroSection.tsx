@@ -164,22 +164,22 @@ export default function HeroSection() {
             </div>
 
             <div className="reveal-scale mb-8">
-              <h1 className="text-5xl md:text-8xl font-bold mb-6 leading-tight">
-                <div className="flex justify-center items-center mb-4">
-                  <span
-                    className="text-white"
-                    style={{ fontFamily: "Times New Roman, serif", fontSize: "5rem" }}
-                  >
-                    Honeywell
-                  </span>
-                </div>
-                <span className="text-foreground block my-2">
+              <h1 className="font-bold mb-6 leading-tight text-center">
+              <div className="flex justify-center items-center mb-4">
+                <span
+                  className="text-white"
+                  style={{ fontFamily: "Times New Roman, serif", fontSize: "5rem" }} // Larger Honeywell
+                >
+                  Honeywell
+                </span>
+              </div>
+                <span
+                  className="text-foreground block my-2"
+                  style={{ fontSize: "2rem", fontWeight: 600 }} // Smaller Hackathon
+                >
                   Hackathon
                 </span>
-                <span className="text-gradient-secondary block"
-                  style={{ fontSize: "2rem", fontWeight: 600 }}>
-    
-                </span>
+              <span className="text-gradient-secondary block"></span>
               </h1>
             </div>
 
