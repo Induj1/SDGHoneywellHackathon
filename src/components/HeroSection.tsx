@@ -166,20 +166,22 @@ export default function HeroSection() {
             <div className="reveal-scale mb-8">
               <h1 className="text-5xl md:text-8xl font-bold mb-6 leading-tight">
                 <div className="flex justify-center items-center mb-4">
-                  <img 
-                    src={honeywellLogo} 
-                    alt="Honeywell" 
-                    className="h-16 md:h-24 w-auto filter brightness-110"
-                  />
+                  <span
+                    className="text-white"
+                    style={{ fontFamily: "Times New Roman, serif", fontSize: "2.5rem" }}
+                  >
+                    Honeywell
+                  </span>
                 </div>
                 <span className="text-foreground block my-2">
                   Hackathon
                 </span>
                 <span className="text-gradient-secondary block">
-                
+    
                 </span>
               </h1>
             </div>
+
 
             <div className="reveal-up mb-6">
               <h2 className="text-2xl md:text-4xl font-semibold text-gradient-tech mb-4">
