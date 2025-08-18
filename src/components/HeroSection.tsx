@@ -175,7 +175,7 @@ export default function HeroSection() {
               </div>
                 <span
                   className="text-foreground block my-2"
-                  style={{ fontSize: "2rem", fontWeight: 600 }} // Smaller Hackathon
+                  style={{ fontSize: "5rem", fontWeight: 600 }} // Smaller Hackathon
                 >
                   Hackathon
                 </span>
