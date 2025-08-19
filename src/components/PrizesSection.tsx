@@ -75,7 +75,7 @@ export default function PrizesSection() {
           </p>
         </div>
 
-//...existing code...
+
 
 
         {/* Participant Perks */}

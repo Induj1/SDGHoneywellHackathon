@@ -74,7 +74,7 @@ const themes = [
 const rules = [
   "Teams of 2-4 members (college students only)",
   "Original code and ideas only", 
-  "Must use at least one Honeywell API/dataset",
+
   "Open source technologies preferred",
   "Presentation must be under 5 minutes",
   "Judging based on innovation, technical excellence, and business impact"
@@ -216,12 +216,10 @@ export default function EventSchedule() {
                         ref={el => eventRefs.current[globalIndex] = el}
                         className={`relative transition-all duration-700 ${
                           isLeft ? 'lg:pr-16' : 'lg:pl-16'
-                        } ${
-                          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-30'
-                        }`}
+                        } translate-y-0 opacity-100`}
                         style={{ 
                           transitionDelay: `${eventIndex * 150}ms`,
-                          transform: `translateX(${isVisible ? '0' : isLeft ? '-20px' : '20px'}) translateY(${isVisible ? '0' : '20px'})`
+                          transform: 'translateX(0) translateY(0)'
                         }}
                       >
                         {/* Connection Line to Timeline */}
@@ -233,19 +231,11 @@ export default function EventSchedule() {
                             : 'from-muted/30 to-transparent'
                         }`} />
 
-                        <Card className={`tech-card border-0 h-full transition-all duration-500 ${
-                          isVisible ? 'shadow-lg' : 'shadow-sm'
-                        }`}>
+                        <Card className={`tech-card border-0 h-full transition-all duration-500 shadow-lg`}>
                           <CardContent className="p-6">
                             <div className="flex items-start gap-4">
-                              <div className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center transition-all duration-500 ${
-                                isVisible 
-                                  ? `from-${day.color}/20 to-${day.color}-glow/20 shadow-md` 
-                                  : 'from-muted/20 to-muted-foreground/10'
-                              }`}>
-                                <Clock className={`w-5 h-5 transition-colors duration-500 ${
-                                  isVisible ? 'text-primary' : 'text-muted-foreground'
-                                }`} />
+                              <div className={`flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br flex items-center justify-center transition-all duration-500 from-${day.color}/20 to-${day.color}-glow/20 shadow-md`}>
+                                <Clock className="w-5 h-5 text-primary" />
                               </div>
                               <div className="flex-1">
                                 <div className="flex items-center gap-2 mb-2">
