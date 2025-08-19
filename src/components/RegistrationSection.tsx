@@ -66,7 +66,7 @@ export default function RegistrationSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground">Event Duration</h4>
-                    <p className="text-muted-foreground">72 hours of non-stop innovation</p>
+                    <p className="text-muted-foreground">48 hours of non-stop innovation</p>
                   </div>
                 </div>
 
