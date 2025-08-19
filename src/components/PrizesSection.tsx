@@ -30,6 +30,22 @@ const prizes = [
     color: "from-amber-600 to-amber-800",
     textColor: "text-amber-600",
     bgColor: "from-amber-600/20 to-amber-800/20"
+  },
+  {
+    position: "Consolation Prize",
+    amount: "₹10,000",
+    icon: <Gift className="w-8 h-8" />,
+    color: "from-blue-400 to-blue-600",
+    textColor: "text-blue-400",
+    bgColor: "from-blue-400/20 to-blue-600/20"
+  },
+  {
+    position: "Consolation Prize",
+    amount: "₹10,000",
+    icon: <Gift className="w-8 h-8" />,
+    color: "from-blue-400 to-blue-600",
+    textColor: "text-blue-400",
+    bgColor: "from-blue-400/20 to-blue-600/20"
   }
 ];
 
@@ -65,19 +81,15 @@ const sponsors = [
 ];
 
 const participantPerks = [
-  "Exclusive Honeywell merchandise for all participants",
   "Certificate of participation from MIT Bengaluru", 
-  "Access to Honeywell's exclusive tech resources",
   "Networking opportunities with industry leaders",
-  "Free meals and refreshments throughout the event",
-  "Access to premium cloud credits and development tools"
+  "Free meals and refreshments throughout the event"
 ];
 
 export default function PrizesSection() {
   return (
     <section className="py-20 bg-hero relative overflow-hidden">
       <div className="absolute inset-0 bg-mesh opacity-30" />
-      
       <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 animate-on-scroll">
@@ -85,7 +97,7 @@ export default function PrizesSection() {
             Prizes & Sponsors
           </Badge>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            <span className="text-gradient-primary">₹1.5 Lakh</span> Prize Pool
+            <span className="text-gradient-primary">₹1.75 Lakh</span> Prize Money
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Compete for massive cash prizes, exclusive merchandise, and career opportunities
@@ -93,18 +105,36 @@ export default function PrizesSection() {
         </div>
 
         {/* Main Prizes */}
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
-          {prizes.map((prize, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12 md:mb-20">
+          {prizes.slice(0, 3).map((prize, index) => (
             <Card key={index} className={`tech-card border-0 text-center animate-on-scroll ${index === 0 ? 'scale-105 border-yellow-400/50' : ''}`} style={{ animationDelay: `${index * 0.2}s` }}>
-              <CardContent className="p-8">
-                <div className={`w-20 h-20 mx-auto rounded-3xl bg-gradient-to-br ${prize.bgColor} flex items-center justify-center mb-6 ${index === 0 ? 'pulse-glow' : ''}`}>
+              <CardContent className="p-4 sm:p-6 md:p-8">
+                <div className={`w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl bg-gradient-to-br ${prize.bgColor} flex items-center justify-center mb-4 sm:mb-6 ${index === 0 ? 'pulse-glow' : ''}`}> 
                   <div className={prize.textColor}>
                     {prize.icon}
                   </div>
                 </div>
-                
-                <h3 className="text-xl font-bold mb-2 text-foreground">{prize.position}</h3>
-                <div className={`text-3xl font-bold bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
+                <h3 className="text-base sm:text-xl font-bold mb-1 sm:mb-2 text-foreground">{prize.position}</h3>
+                <div className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
+                  {prize.amount}
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+
+        {/* Consolation Prizes */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-12 md:mb-20">
+          {prizes.slice(3).map((prize, index) => (
+            <Card key={index} className="tech-card border-0 text-center animate-on-scroll" style={{ animationDelay: `${(index + 3) * 0.2}s` }}>
+              <CardContent className="p-4 sm:p-6 md:p-8">
+                <div className={`w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl bg-gradient-to-br ${prize.bgColor} flex items-center justify-center mb-4 sm:mb-6`}>
+                  <div className={prize.textColor}>
+                    {prize.icon}
+                  </div>
+                </div>
+                <h3 className="text-base sm:text-xl font-bold mb-1 sm:mb-2 text-foreground">{prize.position}</h3>
+                <div className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
                   {prize.amount}
                 </div>
               </CardContent>

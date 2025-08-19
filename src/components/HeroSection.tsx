@@ -120,19 +120,31 @@ export default function HeroSection() {
       </Enhanced3DMagneticElement>
 
       {/* Main Content with Staggered Animations */}
+<<<<<<< HEAD
       <div className="relative z-10 container mx-auto px-4 pt-24 text-center">
+=======
+      <div className="relative z-10 container mx-auto px-2 sm:px-4 pt-16 sm:pt-24 text-center">
+>>>>>>> 0d2023c (push)
         <StaggeredAnimationContainer staggerDelay={200}>
           <div className={`reveal-up transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             
             {/* Partner Logos */}
             <div className="reveal-up mb-12">
+<<<<<<< HEAD
               <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-6">
+=======
+            <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12 mb-4 sm:mb-6">
+>>>>>>> 0d2023c (push)
                 <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
                     <img 
                       src={sdgLogo} 
                       alt="SDG Club MIT Bengaluru" 
+<<<<<<< HEAD
                       className="h-20 md:h-24 w-auto filter brightness-110"
+=======
+                      className="h-12 sm:h-16 md:h-20 w-auto filter brightness-110"
+>>>>>>> 0d2023c (push)
                     />
                   </div> 
                 </Enhanced3DMagneticElement>
@@ -144,7 +156,11 @@ export default function HeroSection() {
                     <img 
                       src={mitLogo} 
                       alt="Manipal Institute of Technology Bengaluru" 
+<<<<<<< HEAD
                       className="h-16 md:h-20 w-auto filter brightness-110"
+=======
+                      className="h-10 sm:h-14 md:h-16 w-auto filter brightness-110"
+>>>>>>> 0d2023c (push)
                     />
                   </div>
                 </Enhanced3DMagneticElement>
@@ -156,14 +172,28 @@ export default function HeroSection() {
                     <img 
                       src={acmLogo} 
                       alt="ACM MIT Bengaluru" 
+<<<<<<< HEAD
                       className="h-16 md:h-20 w-auto filter brightness-110"
                     />
                   </div>
                 </Enhanced3DMagneticElement>
+=======
+                      className="h-10 sm:h-14 md:h-16 w-auto filter brightness-110"
+                    />
+                  </div>
+                </Enhanced3DMagneticElement>
+                <div className="text-white/60 text-2xl font-light">×</div>
+                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
+                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-2 border border-white/20 hover:border-white/40 transition-all duration-300 flex items-center justify-center min-w-[60px] min-h-[40px]">
+                    <span className="text-xs sm:text-sm md:text-base font-bold text-white">Honeywell Technology Solutions</span>
+                  </div>
+                </Enhanced3DMagneticElement>
+>>>>>>> 0d2023c (push)
               </div>
             </div>
 
             <div className="reveal-scale mb-8">
+<<<<<<< HEAD
               <h1 className="font-bold mb-6 leading-tight text-center">
               <div className="flex justify-center items-center mb-4">
                 <span
@@ -176,6 +206,19 @@ export default function HeroSection() {
                 <span
                   className="text-foreground block my-2"
                   style={{ fontSize: "5rem", fontWeight: 600 }} // Smaller Hackathon
+=======
+              <h1 className="font-bold mb-4 sm:mb-6 leading-tight text-center text-3xl sm:text-5xl md:text-6xl">
+                <div className="flex justify-center items-center mb-2 sm:mb-4">
+                  <span
+                    className="text-white text-4xl sm:text-6xl md:text-[5rem]"
+                    style={{ fontFamily: "Times New Roman, serif" }}
+                  >
+                    HackSpace
+                  </span>
+                </div>
+                <span
+                  className="text-foreground block my-1 sm:my-2 text-3xl sm:text-5xl md:text-[5rem] font-bold"
+>>>>>>> 0d2023c (push)
                 >
                   Hackathon
                 </span>
@@ -185,13 +228,21 @@ export default function HeroSection() {
 
 
             <div className="reveal-up mb-6">
+<<<<<<< HEAD
               <h2 className="text-2xl md:text-4xl font-semibold text-gradient-tech mb-4">
+=======
+              <h2 className="text-lg sm:text-2xl md:text-4xl font-semibold text-gradient-tech mb-2 sm:mb-4">
+>>>>>>> 0d2023c (push)
                 Aerospace & Industrial Automation
               </h2>
             </div>
 
             <div className="reveal-up mb-12">
+<<<<<<< HEAD
               <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+=======
+              <p className="text-base sm:text-xl md:text-2xl text-muted-foreground max-w-2xl sm:max-w-4xl mx-auto leading-relaxed">
+>>>>>>> 0d2023c (push)
                 Organized by: <span className="text-secondary font-bold bg-secondary/10 px-2 py-1 rounded-lg">School of Computer Engineering, MIT, MAHE Bengaluru</span>
                 <br className="hidden md:block" />
                 & <span className="text-primary font-bold bg-primary/10 px-2 py-1 rounded-lg">SDG MITBLR</span>
@@ -199,23 +250,37 @@ export default function HeroSection() {
             </div>
 
             {/* Enhanced Event Details with 3D Cards */}
+<<<<<<< HEAD
             <div className="flex flex-wrap justify-center gap-8 mb-16 reveal-up">
               <Enhanced3DMagneticElement intensity={1} tiltIntensity={0.5}>
                 <div className="flex items-center gap-3 tech-card p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 min-w-[200px]">
+=======
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mb-8 sm:mb-16 reveal-up">
+              <Enhanced3DMagneticElement intensity={1} tiltIntensity={0.5}>
+                <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 min-w-[120px] sm:min-w-[200px]">
+>>>>>>> 0d2023c (push)
                   <MapPin className="w-6 h-6 text-primary" />
                   <span className="font-medium">MIT Bengaluru Campus</span>
                 </div>
               </Enhanced3DMagneticElement>
               
               <Enhanced3DMagneticElement intensity={1} tiltIntensity={0.5}>
+<<<<<<< HEAD
                 <div className="flex items-center gap-3 tech-card p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 min-w-[200px]">
+=======
+                <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 min-w-[120px] sm:min-w-[200px]">
+>>>>>>> 0d2023c (push)
                   <Users className="w-6 h-6 text-secondary" />
                   <span className="font-medium">500+ Participants</span>
                 </div>
               </Enhanced3DMagneticElement>
               
               <Enhanced3DMagneticElement intensity={1} tiltIntensity={0.5}>
+<<<<<<< HEAD
                 <div className="flex items-center gap-3 tech-card p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 min-w-[200px]">
+=======
+                <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 min-w-[120px] sm:min-w-[200px]">
+>>>>>>> 0d2023c (push)
                   <Trophy className="w-6 h-6 text-accent" />
                   <span className="font-medium">₹1.5L Prize Pool</span>
                 </div>
@@ -223,8 +288,13 @@ export default function HeroSection() {
             </div>
 
             {/* Enhanced Countdown Timer */}
+<<<<<<< HEAD
             <div className="mb-16 reveal-scale">
               <h3 className="text-2xl font-bold mb-8 text-foreground flex items-center justify-center gap-3">
+=======
+            <div className="mb-8 sm:mb-16 reveal-scale">
+              <h3 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-8 text-foreground flex items-center justify-center gap-2 sm:gap-3">
+>>>>>>> 0d2023c (push)
                 <Sparkles className="w-6 h-6 text-primary" />
                 Event Starts In
                 <Sparkles className="w-6 h-6 text-primary" />
@@ -233,7 +303,11 @@ export default function HeroSection() {
             </div>
 
             {/* Enhanced Call to Action Buttons */}
+<<<<<<< HEAD
             <div className="flex flex-col sm:flex-row gap-6 justify-center reveal-up">
+=======
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center reveal-up">
+>>>>>>> 0d2023c (push)
               <Enhanced3DMagneticElement intensity={1.2} tiltIntensity={0.8}>
                 <Button className="btn-hero text-lg px-10 py-6 rounded-xl bg-gradient-to-r from-primary via-primary-glow to-primary hover:from-primary-glow hover:to-primary group">
                   <Sparkles className="w-5 h-5 mr-3 group-hover:animate-spin" />
