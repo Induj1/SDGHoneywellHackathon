@@ -158,32 +158,20 @@ export default function EventSchedule() {
                 {/* Day Header */}
                 <div className="flex items-center justify-center mb-16">
                   <div 
-                    className={`relative flex items-center gap-6 transition-all duration-700 ${
-                      dayIndex <= activeDay ? 'scale-100 opacity-100' : 'scale-90 opacity-60'
-                    }`}
+                    className="relative flex items-center gap-6 transition-all duration-700 scale-100 opacity-100"
                   >
                     {/* Timeline Node */}
                     <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
                       <div 
-                        className={`w-16 h-16 rounded-full bg-gradient-to-br transition-all duration-500 flex items-center justify-center ${
-                          dayIndex <= activeDay 
-                            ? `from-${day.color} to-${day.color}-glow shadow-lg shadow-${day.color}/50` 
-                            : 'from-muted to-muted-foreground/20'
-                        }`}
+                        className={`w-16 h-16 rounded-full bg-gradient-to-br transition-all duration-500 flex items-center justify-center from-${day.color} to-${day.color}-glow shadow-lg shadow-${day.color}/50`}
                       >
-                        {dayIndex <= activeDay ? (
-                          day.icon
-                        ) : (
-                          <div className="w-3 h-3 rounded-full bg-muted-foreground/50" />
-                        )}
+                        {day.icon}
                       </div>
                     </div>
 
                     {/* Day Info Card */}
                     <Card 
-                      className={`tech-card border-0 transition-all duration-700 ${
-                        dayIndex <= activeDay ? 'scale-100 opacity-100' : 'scale-95 opacity-70'
-                      }`}
+                      className="tech-card border-0 transition-all duration-700 scale-100 opacity-100"
                     >
                       <CardHeader className="text-center">
                         <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br flex items-center justify-center mb-4 transition-all duration-500 ${
