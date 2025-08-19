@@ -49,36 +49,7 @@ const prizes = [
   }
 ];
 
-const sponsors = [
-  {
-    type: "Title Sponsor",
-    name: "Honeywell",
-    description: "Global technology leader in aerospace and industrial automation",
-    logo: honeywellLogo,
-    contribution: "₹1.5L Prize Pool"
-  },
-  {
-    type: "Venue Partner",
-    name: "MIT Bengaluru",
-    description: "Premier engineering institution fostering innovation",
-    logo: mitLogo, 
-    contribution: "World-class facilities + Faculty support"
-  },
-  {
-    type: "Organizing Partner",
-    name: "SDG Club",
-    description: "Driving sustainable development through technology",
-    logo: sdgLogo,
-    contribution: "Event management + Student community"
-  },
-  {
-    type: "Collaborating Partner", 
-    name: "ACM MIT Bengaluru",
-    description: "Association for Computing Machinery student chapter",
-    logo: acmLogo,
-    contribution: "Technical expertise + Student engagement"
-  }
-];
+// ...existing code...
 
 const participantPerks = [
   "Certificate of participation from MIT Bengaluru", 
@@ -104,86 +75,8 @@ export default function PrizesSection() {
           </p>
         </div>
 
-        {/* Main Prizes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-12 md:mb-20">
-          {prizes.slice(0, 3).map((prize, index) => (
-            <Card key={index} className={`tech-card border-0 text-center animate-on-scroll ${index === 0 ? 'scale-105 border-yellow-400/50' : ''}`} style={{ animationDelay: `${index * 0.2}s` }}>
-              <CardContent className="p-4 sm:p-6 md:p-8">
-                <div className={`w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl bg-gradient-to-br ${prize.bgColor} flex items-center justify-center mb-4 sm:mb-6 ${index === 0 ? 'pulse-glow' : ''}`}> 
-                  <div className={prize.textColor}>
-                    {prize.icon}
-                  </div>
-                </div>
-                <h3 className="text-base sm:text-xl font-bold mb-1 sm:mb-2 text-foreground">{prize.position}</h3>
-                <div className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
-                  {prize.amount}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Consolation Prizes */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8 mb-12 md:mb-20">
-          {prizes.slice(3).map((prize, index) => (
-            <Card key={index} className="tech-card border-0 text-center animate-on-scroll" style={{ animationDelay: `${(index + 3) * 0.2}s` }}>
-              <CardContent className="p-4 sm:p-6 md:p-8">
-                <div className={`w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-3xl bg-gradient-to-br ${prize.bgColor} flex items-center justify-center mb-4 sm:mb-6`}>
-                  <div className={prize.textColor}>
-                    {prize.icon}
-                  </div>
-                </div>
-                <h3 className="text-base sm:text-xl font-bold mb-1 sm:mb-2 text-foreground">{prize.position}</h3>
-                <div className={`text-2xl sm:text-3xl font-bold bg-gradient-to-r ${prize.color} bg-clip-text text-transparent`}>
-                  {prize.amount}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        {/* Sponsors Section */}
-        <div className="mb-20 animate-on-scroll">
-          <h3 className="text-2xl md:text-4xl font-bold text-center mb-12">
-            Our <span className="text-gradient-tech">Partners</span>
-          </h3>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {sponsors.map((sponsor, index) => (
-              <Card key={index} className="tech-card border-0">
-                <CardContent className="p-8 text-center">
-                  <Badge variant="outline" className="mb-4 text-primary border-primary/50">
-                    {sponsor.type}
-                  </Badge>
-                  
-                  <div className="mb-4 flex justify-center">
-                    {sponsor.name === "Honeywell" ? (
-                    <span
-                      className="text-white"
-                      style={{ fontFamily: "Times New Roman, serif", fontSize: "64px" }}
-                    >
-                      Honeywell
-                    </span>
-                    ) : (
-                    <img 
-                      src={sponsor.logo} 
-                      alt={sponsor.name} 
-                      className="h-16 w-auto filter brightness-110"
-                    />
-                    )}
-                  </div>
-                  
-                  <h4 className="text-xl font-bold mb-3 text-foreground">{sponsor.name}</h4>
-                  <p className="text-muted-foreground mb-4 text-sm">{sponsor.description}</p>
-                  
-                  <div className="bg-card/30 rounded-lg p-3 border border-border/30">
-                    <p className="text-xs text-muted-foreground font-medium">{sponsor.contribution}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
+// ...existing code...
+        // ...existing code...
 
         {/* Participant Perks */}
         <div className="animate-on-scroll">
