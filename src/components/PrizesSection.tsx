@@ -49,7 +49,7 @@ const prizes = [
   }
 ];
 
-// ...existing code...
+
 
 const participantPerks = [
   "Certificate of participation from MIT Bengaluru", 
@@ -75,8 +75,8 @@ export default function PrizesSection() {
           </p>
         </div>
 
-// ...existing code...
-        // ...existing code...
+//...existing code...
+
 
         {/* Participant Perks */}
         <div className="animate-on-scroll">
