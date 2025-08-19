@@ -188,36 +188,9 @@ export default function CreditsSection() {
 
           {/* Honeywell Technology Partners Section */}
           <div className="reveal-up mb-20">
-<<<<<<< HEAD
-            <h2 className="text-4xl md:text-6xl font-bold text-center mb-16 text-gradient-tech">
-              Honeywell Technology Partners
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              <Enhanced3DMagneticElement intensity={0.7} tiltIntensity={0.3}>
-                <div className="tech-card p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-primary/20 hover:border-primary/50 transition-all duration-500">
-                  <div className="space-y-4">
-                    <div className="border-b border-border/30 pb-3">
-                      <h4 className="text-lg font-bold text-foreground mb-1">
-                        Ms. Meena Prasad
-                      </h4>
-                      <p className="text-muted-foreground text-sm">
-                        University Relations Manager at Honeywell 
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground mb-1">
-                        Mr. Almelu Natarajan
-                      </h4>
-                      <p className="text-muted-foreground text-sm">
-                        Advanced Software Engineer at Honeywell
-                      </p>
-=======
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 text-white">
               Honeywell Technology Partners
             </h2>
-            
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 max-w-2xl mx-auto">
               <Enhanced3DMagneticElement intensity={0.7} tiltIntensity={0.3}>
                 <div className="tech-card p-2 sm:p-3 rounded-lg bg-card/40 backdrop-blur-lg border border-primary/20 hover:border-primary/50 transition-all duration-500">
@@ -233,33 +206,11 @@ export default function CreditsSection() {
                     <div>
                       <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Ms. Alamelu Krishnamani</h4>
                       <p className="text-muted-foreground text-xs">Director Software Engineering<br />at Honeywell Aerospace</p>
->>>>>>> 0d2023c (push)
                     </div>
                   </div>
                 </div>
               </Enhanced3DMagneticElement>
-
               <Enhanced3DMagneticElement intensity={0.7} tiltIntensity={0.3}>
-<<<<<<< HEAD
-                <div className="tech-card p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500">
-                  <div className="space-y-4">
-                    <div className="border-b border-border/30 pb-3">
-                      <h4 className="text-lg font-bold text-foreground mb-1">
-                        Mr. Divya Swarup
-                      </h4>
-                      <p className="text-muted-foreground text-sm">
-                        Fellow - Aerospace Technologies at Honeywell
-                      </p>
-                    </div>
-
-                    <div>
-                      <h4 className="text-lg font-bold text-foreground mb-1">
-                       Mr. Appar Vallikannu
-                      </h4>
-                      <p className="text-muted-foreground text-sm">
-                        Building Automation System Analyst at Honeywell
-                      </p>
-=======
                 <div className="tech-card p-2 sm:p-3 rounded-lg bg-card/40 backdrop-blur-lg border border-secondary/20 hover:border-secondary/50 transition-all duration-500">
                   <div className="space-y-2">
                     <div>
@@ -273,46 +224,12 @@ export default function CreditsSection() {
                     <div>
                       <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Mr. Venkateswara Reddy</h4>
                       <p className="text-muted-foreground text-xs">Sr. Engineering Program Manager<br />at Honeywell Industrial Automation</p>
->>>>>>> 0d2023c (push)
                     </div>
                   </div>
                 </div>
               </Enhanced3DMagneticElement>
-<<<<<<< HEAD
             </div>
           </div>
-
-=======
-
-            </div>
-          </div>
-
-        {/* Event Timeline Section */}
-        <div className="reveal-up mb-20">
-          <div className="bg-gradient-to-r from-primary/80 via-background/80 to-secondary/80 rounded-xl py-4 px-6 mb-8 border border-primary/30">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gradient-tech text-center">Event Timeline</h2>
-          </div>
-          <div className="bg-card/60 rounded-xl p-6 max-w-xl mx-auto border border-border/30 backdrop-blur-lg">
-            <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-4">
-                <span className="w-3 h-3 rounded-full bg-gradient-to-br from-primary to-secondary inline-block shadow-md" />
-                <span className="text-primary font-semibold italic text-base sm:text-lg">September 14<sup>th</sup> to 20<sup>th</sup></span>
-                <span className="ml-2 font-bold text-foreground">ONLINE REGISTRATIONS</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="w-3 h-3 rounded-full bg-gradient-to-br from-primary to-secondary inline-block shadow-md" />
-                <span className="text-primary font-semibold italic text-base sm:text-lg">September 20<sup>th</sup> - 25<sup>th</sup></span>
-                <span className="ml-2 font-bold text-foreground">ANNOUNCEMENT OF SHORTLISTED TEAMS</span>
-              </div>
-              <div className="flex items-center gap-4">
-                <span className="w-3 h-3 rounded-full bg-gradient-to-br from-primary to-secondary inline-block shadow-md" />
-                <span className="text-primary font-semibold italic text-base sm:text-lg">September 25<sup>th</sup> - 27<sup>th</sup></span>
-                <span className="ml-2 font-bold text-foreground">EVENT !!</span>
-              </div>
-            </div>
-          </div>
-        </div>
->>>>>>> 0d2023c (push)
         </StaggeredAnimationContainer>
       </div>
 
