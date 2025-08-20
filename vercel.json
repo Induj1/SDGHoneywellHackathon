@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/hackspacehackathon",
+      "destination": "https://www.mitblrsdg.club/",
+      "permanent": true
+    }
+  ]
+}

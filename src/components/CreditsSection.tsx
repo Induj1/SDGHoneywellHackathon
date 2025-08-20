@@ -202,10 +202,7 @@ export default function CreditsSection() {
                       <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Ms. Meena Prasad</h4>
                       <p className="text-muted-foreground text-xs">University Relations Manager<br />at Honeywell</p>
                     </div>
-                    <div>
-                      <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Mr. Almelu Natarajan</h4>
-                      <p className="text-muted-foreground text-xs">Advanced Software Engineer<br />at Honeywell Technology<br />at Honeywell</p>
-                    </div>
+                    
                     <div>
                       <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Ms. Alamelu Krishnamani</h4>
                       <p className="text-muted-foreground text-xs">Director Software Engineering<br />at Honeywell Aerospace</p>
@@ -220,10 +217,7 @@ export default function CreditsSection() {
                       <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Mr. Divya Swarup</h4>
                       <p className="text-muted-foreground text-xs">Fellow<br />at Honeywell Aerospace</p>
                     </div>
-                    <div>
-                      <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Mr. Appar Vallikannu</h4>
-                      <p className="text-muted-foreground text-xs">Building Automation<br />System Analyst at Honeywell</p>
-                    </div>
+
                     <div>
                       <h4 className="text-sm sm:text-base font-bold text-foreground mb-1">Mr. Venkateswara Reddy</h4>
                       <p className="text-muted-foreground text-xs">Sr. Engineering Program Manager<br />at Honeywell Industrial Automation</p>
