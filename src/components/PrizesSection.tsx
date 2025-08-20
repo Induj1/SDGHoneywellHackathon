@@ -75,8 +75,76 @@ export default function PrizesSection() {
           </p>
         </div>
 
-
-
+        {/* Prize Breakdown - Card Layout with Details */}
+        <div className="mb-8 animate-on-scroll">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* 1st Prize */}
+            <Card className="tech-card border-0 bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 shadow-md hover:scale-102 hover:shadow-lg transition-all duration-200 rounded-xl">
+              <CardContent className="flex flex-col items-center justify-center p-5">
+                <div className="mb-2 flex items-center justify-center">
+                  <span className="inline-block bg-yellow-400/20 rounded-full p-1 shadow">
+                    <Trophy className="w-8 h-8 text-yellow-400" />
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-yellow-400 mb-1">1st Prize</h3>
+                <p className="text-2xl font-bold text-yellow-400 mb-1">₹75,000</p>
+              </CardContent>
+            </Card>
+            {/* 2nd Prize */}
+            <Card className="tech-card border-0 bg-gradient-to-br from-gray-300/20 to-gray-500/20 shadow-md hover:scale-102 hover:shadow-lg transition-all duration-200 rounded-xl">
+              <CardContent className="flex flex-col items-center justify-center p-5">
+                <div className="mb-2 flex items-center justify-center">
+                  <span className="inline-block bg-gray-300/20 rounded-full p-1 shadow">
+                    <Medal className="w-8 h-8 text-gray-300" />
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-300 mb-1">2nd Prize</h3>
+                <p className="text-2xl font-bold text-gray-300 mb-1">₹50,000</p>
+              </CardContent>
+            </Card>
+            {/* 3rd Prize */}
+            <Card className="tech-card border-0 bg-gradient-to-br from-amber-600/20 to-amber-800/20 shadow-md hover:scale-102 hover:shadow-lg transition-all duration-200 rounded-xl">
+              <CardContent className="flex flex-col items-center justify-center p-5">
+                <div className="mb-2 flex items-center justify-center">
+                  <span className="inline-block bg-amber-600/20 rounded-full p-1 shadow">
+                    <Award className="w-8 h-8 text-amber-600" />
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-amber-600 mb-1">3rd Prize</h3>
+                <p className="text-2xl font-bold text-amber-600 mb-1">₹25,000</p>
+              </CardContent>
+            </Card>
+          </div>
+          <div className="w-full flex items-center justify-center my-6">
+            <div className="h-0.5 w-1/2 bg-gradient-to-r from-accent/20 via-primary/10 to-secondary/20 rounded-full blur-xs opacity-40"></div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6 mt-6">
+            {/* Consolation Prize 1 */}
+            <Card className="tech-card border-0 bg-gradient-to-br from-blue-400/20 to-blue-600/20 shadow-md hover:scale-102 hover:shadow-lg transition-all duration-200 rounded-xl">
+              <CardContent className="flex flex-col items-center justify-center p-5">
+                <div className="mb-2 flex items-center justify-center">
+                  <span className="inline-block bg-blue-400/20 rounded-full p-1 shadow">
+                    <Gift className="w-8 h-8 text-blue-400" />
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-blue-400 mb-1">Consolation Prize</h3>
+                <p className="text-2xl font-bold text-blue-400 mb-1">₹10,000</p>
+              </CardContent>
+            </Card>
+            {/* Consolation Prize 2 */}
+            <Card className="tech-card border-0 bg-gradient-to-br from-blue-400/20 to-blue-600/20 shadow-md hover:scale-102 hover:shadow-lg transition-all duration-200 rounded-xl">
+              <CardContent className="flex flex-col items-center justify-center p-5">
+                <div className="mb-2 flex items-center justify-center">
+                  <span className="inline-block bg-blue-400/20 rounded-full p-1 shadow">
+                    <Gift className="w-8 h-8 text-blue-400" />
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-blue-400 mb-1">Consolation Prize</h3>
+                <p className="text-2xl font-bold text-blue-400 mb-1">₹10,000</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
 
         {/* Participant Perks */}
         <div className="animate-on-scroll">
@@ -88,7 +156,6 @@ export default function PrizesSection() {
                 </h3>
                 <p className="text-muted-foreground">Every participant receives valuable benefits</p>
               </div>
-              
               <div className="grid md:grid-cols-2 gap-6">
                 {participantPerks.map((perk, index) => (
                   <div key={index} className="flex items-center gap-3 p-3 rounded-lg bg-card/30 border border-border/30">
