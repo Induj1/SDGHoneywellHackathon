@@ -75,7 +75,7 @@ export default function Footer() {
                 <span className="text-white font-bold text-lg">H</span>
               </div>
               <div>
-                <div className="font-bold text-lg text-foreground">Honeywell Hackathon</div>
+                <div className="font-bold text-lg text-foreground">HackSpace Hackathon</div>
                 <div className="text-sm text-muted-foreground">2025</div>
               </div>
             </div>
@@ -177,7 +177,7 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="flex flex-col md:flex-row justify-between items-center pb-8 gap-4">
           <div className="text-sm text-muted-foreground text-center md:text-left">
-            © 2025 Honeywell Hackathon. Organized by SDG Club, MIT Bengaluru in collaboration with Honeywell.
+            © 2025 HackSpace Hackathon. Organized by SDG Club, MIT Bengaluru in collaboration with Honeywell.
           </div>
           
           <div className="flex items-center gap-6 text-sm">

@@ -44,7 +44,7 @@ export default function Navigation() {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div>
-              <div className="font-bold text-lg text-foreground">Honeywell Hackathon</div>
+              <div className="font-bold text-lg text-foreground">HackSpace Hackathon</div>
               <div className="text-xs text-muted-foreground">2025</div>
             </div>
           </div>
