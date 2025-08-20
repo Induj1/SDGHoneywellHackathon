@@ -178,8 +178,16 @@ export default function RegistrationSection() {
                     <span className="text-foreground">induj.mitblr2023@learner.manipal.edu</span>
                   </div>
                   <div>
+                    <span className="text-muted-foreground">Email: </span>
+                    <span className="text-foreground">shivansh.mitblr2023@learner.manipal.edu</span>
+                  </div>
+                  <div>
                     <span className="text-muted-foreground">Phone: </span>
                     <span className="text-foreground">+91 95694 06171</span>
+                  </div>
+                  <div>
+                    <span className="text-muted-foreground">Phone: </span>
+                    <span className="text-foreground">+91 97013 03895</span>
                   </div>
                   <div>
                     <span className="text-muted-foreground">WhatsApp Support: </span>

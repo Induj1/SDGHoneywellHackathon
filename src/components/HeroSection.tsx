@@ -116,42 +116,31 @@ export default function HeroSection() {
           <div className={`reveal-up transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             {/* Partner Logos */}
             <div className="reveal-up mb-12">
-              <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12 mb-4 sm:mb-6">
-                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
-                    <img 
-                      src={sdgLogo} 
-                      alt="SDG Club MIT Bengaluru" 
-                      className="h-12 sm:h-16 md:h-20 w-auto filter brightness-110"
-                    />
-                  </div> 
-                </Enhanced3DMagneticElement>
-                <div className="text-white/60 text-2xl font-light">×</div>
-                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
-                    <img 
-                      src={mitLogo} 
-                      alt="Manipal Institute of Technology Bengaluru" 
-                      className="h-10 sm:h-14 md:h-16 w-auto filter brightness-110"
-                    />
-                  </div>
-                </Enhanced3DMagneticElement>
-                <div className="text-white/60 text-2xl font-light">×</div>
-                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20 hover:border-white/40 transition-all duration-300">
-                    <img 
-                      src={acmLogo} 
-                      alt="ACM MIT Bengaluru" 
-                      className="h-10 sm:h-14 md:h-16 w-auto filter brightness-110"
-                    />
-                  </div>
-                </Enhanced3DMagneticElement>
-                <div className="text-white/60 text-2xl font-light">×</div>
-                <Enhanced3DMagneticElement intensity={0.6} tiltIntensity={0.3}>
-                  <div className="bg-white/10 backdrop-blur-sm rounded-xl p-2 border border-white/20 hover:border-white/40 transition-all duration-300 flex items-center justify-center min-w-[60px] min-h-[40px]">
-                    <span className="text-xs sm:text-sm md:text-base font-bold text-white">Honeywell Technology Solutions</span>
-                  </div>
-                </Enhanced3DMagneticElement>
+              <div className="flex flex-wrap justify-center items-center gap-8 mb-4 sm:mb-6">
+                <img 
+                  src={sdgLogo} 
+                  alt="SDG Club MIT Bengaluru" 
+                  className="h-16 sm:h-20 md:h-24 w-auto mx-2 min-h-[64px]"
+                  style={{objectFit: 'contain'}}
+                />
+                <span className="text-white/60 text-2xl font-light mx-2">×</span>
+                <img 
+                  src={mitLogo} 
+                  alt="Manipal Institute of Technology Bengaluru" 
+                  className="h-16 sm:h-20 md:h-24 w-auto mx-2 min-h-[64px]"
+                  style={{objectFit: 'contain'}}
+                />
+                <span className="text-white/60 text-2xl font-light mx-2">×</span>
+                <img 
+                  src={acmLogo} 
+                  alt="ACM MIT Bengaluru" 
+                  className="h-16 sm:h-20 md:h-24 w-auto mx-2 min-h-[64px]"
+                  style={{objectFit: 'contain'}}
+                />
+                <span className="text-white/60 text-2xl font-light mx-2">×</span>
+                <span className="font-bold text-white text-base sm:text-lg md:text-xl mx-2">
+                  Honeywell Technology<br />Solutions
+                </span>
               </div>
             </div>
             <div className="reveal-scale mb-8">

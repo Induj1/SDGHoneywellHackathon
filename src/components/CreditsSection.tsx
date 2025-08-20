@@ -140,17 +140,18 @@ export default function CreditsSection() {
                   </div>
                 </Enhanced3DMagneticElement>
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
-                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
-                    <h3 className="text-xl font-bold text-foreground mb-2">Dr. Geetabai S Hukkeri</h3>
-                    <p className="text-muted-foreground font-medium">Assistant Professor<br/>MIT Bengaluru, MAHE</p>
-                  </div>
-                </Enhanced3DMagneticElement>
-                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
                     <h3 className="text-xl font-bold text-foreground mb-2">Dr. Gururaj H L</h3>
                     <p className="text-muted-foreground font-medium">Associate Professor<br/>SoCE, MIT Bengaluru</p>
                   </div>
                 </Enhanced3DMagneticElement>
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">Dr. Geetabai S Hukkeri</h3>
+                    <p className="text-muted-foreground font-medium">Assistant Professor<br/>MIT Bengaluru, MAHE</p>
+                  </div>
+                </Enhanced3DMagneticElement>
+                
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
                     <h3 className="text-xl font-bold text-foreground mb-2">Dr. Shreyas J</h3>
