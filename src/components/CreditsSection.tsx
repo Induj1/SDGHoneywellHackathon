@@ -41,7 +41,7 @@ export default function CreditsSection() {
 
                         <div className="border-b border-border/30 pb-4">
                           <h3 className="text-lg font-bold text-foreground mb-1">
-                            Dr. H.S. Ballal
+                           Prof. (Dr.) H.S. Ballal
                           </h3>
                           <p className="text-muted-foreground">
                             Pro-Chancellor, MAHE
@@ -59,7 +59,7 @@ export default function CreditsSection() {
 
                         <div>
                           <h3 className="text-lg font-bold text-foreground mb-1">
-                            Dr. Narayana Sabhahit
+                            Prof. (Dr.) Narayana Sabhahit
                           </h3>
                           <p className="text-muted-foreground">
                             Registrar, MAHE
@@ -89,7 +89,7 @@ export default function CreditsSection() {
 
                         <div className="border-b border-border/30 pb-4">
                           <h3 className="text-lg font-bold text-foreground mb-1">
-                            Dr. Raghavendra Prabhu
+                            Prof. (Dr.) Raghavendra Prabhu
                           </h3>
                           <p className="text-muted-foreground">
                             Deputy Registrar, MAHE Bengaluru
@@ -122,7 +122,7 @@ export default function CreditsSection() {
                       Prof. (Dr.) Dayananda P
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      Dean, MIT Bengaluru, MAHE
+                      Prof & Dean, MIT Bengaluru, MAHE
                     </p>
                   </div>
                 </Enhanced3DMagneticElement>
@@ -135,23 +135,26 @@ export default function CreditsSection() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
-                    <h3 className="text-xl font-bold text-foreground mb-2">
-                      Dr. Shilpa Ankalaki
-                    </h3>
-                    <p className="text-muted-foreground font-medium">
-                      Assistant Professor - Senior Scale<br/>MIT Bengaluru, MAHE
-                    </p>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Dr. Shilpa Ankalaki</h3>
+                    <p className="text-muted-foreground font-medium">Assistant Professor (Sr-scale)<br/>MIT Bengaluru, MAHE</p>
                   </div>
                 </Enhanced3DMagneticElement>
-
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-secondary/20 hover:border-secondary/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">Dr. Geetabai S Hukkeri</h3>
+                    <p className="text-muted-foreground font-medium">Assistant Professor<br/>MIT Bengaluru, MAHE</p>
+                  </div>
+                </Enhanced3DMagneticElement>
                 <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
                   <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
-                    <h3 className="text-xl font-bold text-foreground mb-2">
-                      Dr. Geetabai S Hukkeri
-                    </h3>
-                    <p className="text-muted-foreground font-medium">
-                      Assistant Professor<br/>MIT Bengaluru, MAHE
-                    </p>
+                    <h3 className="text-xl font-bold text-foreground mb-2">Dr. Gururaj H L</h3>
+                    <p className="text-muted-foreground font-medium">Associate Professor<br/>SoCE, MIT Bengaluru</p>
+                  </div>
+                </Enhanced3DMagneticElement>
+                <Enhanced3DMagneticElement intensity={0.8} tiltIntensity={0.4}>
+                  <div className="tech-card p-8 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 transition-all duration-500 text-center">
+                    <h3 className="text-xl font-bold text-foreground mb-2">Dr. Shreyas J</h3>
+                    <p className="text-muted-foreground font-medium">Assistant Professor<br/>SoCE, MIT Bengaluru</p>
                   </div>
                 </Enhanced3DMagneticElement>
               </div>
@@ -189,7 +192,7 @@ export default function CreditsSection() {
           {/* Honeywell Technology Partners Section */}
           <div className="reveal-up mb-20">
             <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8 text-white">
-              Honeywell Technology Partners
+              Honeywell Technology Solutions Representatives
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 max-w-2xl mx-auto">
               <Enhanced3DMagneticElement intensity={0.7} tiltIntensity={0.3}>

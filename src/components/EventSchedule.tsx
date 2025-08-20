@@ -72,7 +72,7 @@ const themes = [
 ];
 
 const rules = [
-  "Teams of 2-4 members (college students only)",
+  "Teams of 2-4 members (UG students only)",
   "Original code and ideas only", 
 
   "Open source technologies preferred",

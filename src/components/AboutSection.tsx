@@ -51,7 +51,7 @@ const participationBenefits = [
   {
     icon: <Award className="w-6 h-6" />,
     title: "Massive Prize Pool",
-    description: "Win ₹1.5 Lakhs in cash prizes plus exclusive Honeywell merchandise and internship opportunities"
+    description: "Win ₹1.75 Lakh in cash prizes plus exclusive Honeywell merchandise and internship opportunities"
   },
   {
     icon: <Users2 className="w-6 h-6" />,

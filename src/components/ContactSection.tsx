@@ -174,19 +174,7 @@ export default function ContactSection() {
               </CardContent>
             </Card>
 
-            {/* Quick Contact CTA */}
-            <Card className="tech-card border-0 mt-6">
-              <CardContent className="p-6 text-center">
-                <h4 className="font-semibold text-foreground mb-4">Still have questions?</h4>
-                <p className="text-sm text-muted-foreground mb-6">
-                  Join our WhatsApp group for instant support and updates from the organizing team.
-                </p>
-                <Button className="btn-secondary w-full" onClick={() => window.open('https://wa.me/919876543210', '_blank')}>
-                  <MessageCircle className="w-4 h-4 mr-2" />
-                  Join WhatsApp Group
-                </Button>
-              </CardContent>
-            </Card>
+           
           </div>
         </div>
 

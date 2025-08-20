@@ -201,7 +201,7 @@ export default function HeroSection() {
               <Enhanced3DMagneticElement intensity={1} tiltIntensity={0.5}>
                 <div className="flex items-center gap-2 sm:gap-3 tech-card p-3 sm:p-6 rounded-xl bg-card/40 backdrop-blur-lg border-2 border-accent/20 hover:border-accent/50 min-w-[120px] sm:min-w-[200px]">
                   <Trophy className="w-6 h-6 text-accent" />
-                  <span className="font-medium">₹1.5L Prize Pool</span>
+                  <span className="font-medium">₹1.75 Prize Pool</span>
                 </div>
               </Enhanced3DMagneticElement>
             </div>
