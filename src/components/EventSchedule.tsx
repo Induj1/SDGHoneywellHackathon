@@ -74,7 +74,7 @@ const themes = [
 const rules = [
   "Teams of 2-4 members (UG students only)",
   "Original code and ideas only", 
-  
+  "This Hackathon is open ONLY for MIT or MAHE Students.",
   "Rs 300 per team registration",
   "Presentation must be under 5 minutes",
   "Judging based on innovation, technical excellence, and business impact"
@@ -115,14 +115,14 @@ export default function EventSchedule() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial call
-    
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // ...existing hooks and useEffect above...
   return (
     <section className="py-20 bg-background relative overflow-hidden">
       <div className="container mx-auto px-4">
+       
         {/* Section Header */}
         <div className="text-center mb-16 animate-on-scroll">
           <Badge variant="outline" className="mb-4 px-4 py-2 text-primary border-primary/50">

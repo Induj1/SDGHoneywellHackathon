@@ -92,6 +92,7 @@ export default function RegistrationSection() {
                       "Access to premium development tools",
                       "Networking opportunities",
                       "Certificate of participation"
+                      
                     ].map((item, index) => (
                       <li key={index} className="flex items-center gap-2 text-sm">
                         <div className="w-1.5 h-1.5 bg-primary rounded-full" />

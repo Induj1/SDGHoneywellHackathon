@@ -70,9 +70,7 @@ export default function PrizesSection() {
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="text-gradient-primary">₹1.75 Lakh</span> Prize Money
           </h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Compete for massive cash prizes, exclusive merchandise, and career opportunities
-          </p>
+         
         </div>
 
         {/* Prize Breakdown - Card Layout with Details */}
