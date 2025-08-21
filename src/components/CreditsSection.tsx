@@ -228,6 +228,7 @@ export default function CreditsSection() {
               </Enhanced3DMagneticElement>
             </div>
           </div>
+
         </StaggeredAnimationContainer>
       </div>
 

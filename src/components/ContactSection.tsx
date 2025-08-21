@@ -29,7 +29,7 @@ const contactInfo = [
     icon: <MapPin className="w-6 h-6" />,
     title: "Venue",
     value: "MIT Bengaluru Campus",
-    action: "https://maps.google.com/mit-bengaluru",
+    action: "https://www.google.co.in/maps/place/Manipal+Academy+of+Higher+Education,+Bengaluru/@13.1233221,77.5896137,17z/",
     color: "primary"
   }
 ];
@@ -39,7 +39,7 @@ const socialLinks = [
     name: "Instagram",
     icon: <Instagram className="w-6 h-6" />,
     handle: "@sdgclub_mit",
-    url: "https://instagram.com/sdgclub_mit",
+    url: "https://www.instagram.com/sdgclub_mitblr/profilecard/?igsh=NDR4b3VoanZsOWpm",
     color: "from-pink-500 to-purple-600",
     description: "Follow for updates and behind-the-scenes content"
   },
@@ -47,17 +47,17 @@ const socialLinks = [
     name: "LinkedIn",
     icon: <Linkedin className="w-6 h-6" />,
     handle: "SDG Club MIT Bengaluru",
-    url: "https://linkedin.com/company/sdgclub-mit",
+    url: "https://www.linkedin.com/company/sdg-club-mit-blr/",
     color: "from-blue-600 to-blue-800", 
     description: "Professional network and career opportunities"
   },
   {
-    name: "Twitter",
-    icon: <Twitter className="w-6 h-6" />,
-    handle: "@SDGClubMIT",
-    url: "https://twitter.com/sdgclubmit",
-    color: "from-sky-400 to-blue-600",
-    description: "Real-time updates and live event coverage"
+    name: "WhatsApp Group",
+    icon: <MessageCircle className="w-6 h-6" />,
+    handle: "SDG Members Group",
+    url: "https://chat.whatsapp.com/LOoA6TT5dHPEndwNooNkDE",
+    color: "from-green-400 to-green-600",
+    description: "Join for real-time updates and member discussions"
   }
 ];
 
@@ -189,11 +189,11 @@ export default function ContactSection() {
                 Our 24/7 support team will be available throughout the hackathon for any urgent assistance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="btn-hero" onClick={() => window.open('tel:+919876543210', '_blank')}>
+                <Button className="btn-hero" onClick={() => window.open('tel:+919569406171', '_blank')}>
                   <Phone className="w-4 h-4 mr-2" />
                   Emergency Hotline
                 </Button>
-                <Button variant="outline" className="btn-outline" onClick={() => window.open('https://wa.me/919876543210', '_blank')}>
+                <Button variant="outline" className="btn-outline" onClick={() => window.open('https://wa.me/919569406171', '_blank')}>
                   <MessageCircle className="w-4 h-4 mr-2" />
                   WhatsApp Support
                 </Button>
