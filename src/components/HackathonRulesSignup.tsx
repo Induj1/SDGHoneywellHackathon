@@ -60,22 +60,22 @@ export default function HackathonRulesSignup() {
   }
 
   return (
-    <section className="w-full flex justify-center py-12">
-      <div className="w-full max-w-5xl flex flex-row gap-10 bg-[#18181b] rounded-2xl shadow-2xl border border-[#27272a] p-10 items-stretch">
-        <div className="flex-1 flex flex-col justify-center">
-          <h2 className="text-4xl font-extrabold mb-8 text-[#f87171] tracking-tight">Hackathon Rules</h2>
-          <div className="bg-[#232326] p-7 rounded-xl whitespace-pre-wrap text-lg text-[#e5e7eb] font-mono opacity-95 shadow-md">
+    <section className="w-full flex justify-center py-8 px-2">
+      <div className="w-full max-w-5xl flex flex-col md:flex-row gap-6 md:gap-10 bg-[#18181b] rounded-2xl shadow-2xl border border-[#27272a] p-4 md:p-10 items-stretch">
+        <div className="flex-1 flex flex-col justify-center mb-6 md:mb-0">
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-6 md:mb-8 text-[#f87171] tracking-tight">Hackathon Rules</h2>
+          <div className="bg-[#232326] p-5 md:p-7 rounded-xl whitespace-pre-wrap text-base md:text-lg text-[#e5e7eb] font-mono opacity-95 shadow-md">
             {HACKATHON_RULES}
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="flex-1 flex flex-col justify-center gap-7 bg-[#232326] rounded-xl p-8 shadow-md">
+        <form onSubmit={handleSubmit} className="flex-1 flex flex-col justify-center gap-5 md:gap-7 bg-[#232326] rounded-xl p-4 md:p-8 shadow-md">
           <input
             type="text"
             name="name"
             placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
-            className="w-full p-4 bg-[#18181b] border border-[#27272a] rounded-lg text-white placeholder-[#a1a1aa] focus:outline-none focus:ring-2 focus:ring-[#f87171] text-lg"
+            className="w-full p-3 md:p-4 bg-[#18181b] border border-[#27272a] rounded-lg text-white placeholder-[#a1a1aa] focus:outline-none focus:ring-2 focus:ring-[#f87171] text-base md:text-lg"
             required
           />
           <input
@@ -84,22 +84,22 @@ export default function HackathonRulesSignup() {
             placeholder="Your Email"
             value={form.email}
             onChange={handleChange}
-            className="w-full p-4 bg-[#18181b] border border-[#27272a] rounded-lg text-white placeholder-[#a1a1aa] focus:outline-none focus:ring-2 focus:ring-[#f87171] text-lg"
+            className="w-full p-3 md:p-4 bg-[#18181b] border border-[#27272a] rounded-lg text-white placeholder-[#a1a1aa] focus:outline-none focus:ring-2 focus:ring-[#f87171] text-base md:text-lg"
             required
           />
-          <label className="flex items-center text-[#e5e7eb] text-base gap-3">
+          <label className="flex items-center text-[#e5e7eb] text-sm md:text-base gap-2 md:gap-3">
             <input
               type="checkbox"
               name="agreed"
               checked={form.agreed}
               onChange={handleChange}
-              className="accent-[#f87171] w-5 h-5"
+              className="accent-[#f87171] w-4 h-4 md:w-5 md:h-5"
               required
             />
             <span>I acknowledge and agree to the Hackathon rules.</span>
           </label>
-          {error && <div className="text-[#f87171] text-base font-semibold text-center">{error}</div>}
-          <button type="submit" className="w-full bg-[#f87171] hover:bg-[#ef4444] text-white font-bold py-4 rounded-lg transition-colors duration-200 shadow text-lg">Sign Up & Acknowledge</button>
+          {error && <div className="text-[#f87171] text-sm md:text-base font-semibold text-center">{error}</div>}
+          <button type="submit" className="w-full bg-[#f87171] hover:bg-[#ef4444] text-white font-bold py-3 md:py-4 rounded-lg transition-colors duration-200 shadow text-base md:text-lg">Sign Up & Acknowledge</button>
         </form>
       </div>
     </section>
