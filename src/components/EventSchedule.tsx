@@ -75,7 +75,6 @@ const rules = [
   "Teams of 2-4 members (UG students only)",
   "Original code and ideas only", 
   "This Hackathon is open ONLY for MIT or MAHE Students.",
-  "Rs 300 per team registration",
   "Presentation must be under 5 minutes",
   "Judging based on innovation, technical excellence, and business impact"
 ];
