@@ -70,7 +70,7 @@ export default function Navigation() {
             
             <Button 
               className="btn-hero text-sm px-4 py-2 hidden sm:flex"
-              onClick={() => window.open('https://forms.gle/honeywellhackathon2025', '_blank')}
+              onClick={() => scrollToSection('#register')}
             >
               <ExternalLink className="w-4 h-4 mr-2" />
               Register

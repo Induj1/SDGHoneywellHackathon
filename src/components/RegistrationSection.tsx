@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import HackathonRegistrationForm from './HackathonRegistrationForm';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { QrCode, Calendar, Clock, Users, Mail, Phone, ExternalLink } from 'lucide-react';
+import { supabase } from '../lib/supabaseClient';
 
 export default function RegistrationSection() {
   const [email, setEmail] = useState('');
@@ -13,14 +15,30 @@ export default function RegistrationSection() {
   
   const qrCodeData = "https://forms.gle/honeywellhackathon2025"; // Placeholder URL
 
-  const handleQuickNotify = (e: React.FormEvent) => {
+  const [notifyError, setNotifyError] = useState('');
+  const [notifySuccess, setNotifySuccess] = useState(false);
+
+  const handleQuickNotify = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle email notification signup
-    console.log('Email notification signup:', email);
-    setEmail('');
-    // Show toast notification
+    setNotifyError('');
+    setNotifySuccess(false);
+    if (!email) return;
+    // Store email in Supabase 'notifications' table
+    const { error } = await supabase.from('notifications').insert({ email });
+    if (error) {
+      setNotifyError('Failed to sign up for notifications. Please try again.');
+    } else {
+      setNotifySuccess(true);
+      setEmail('');
+    }
   };
 
+  const scrollToForm = () => {
+    const formSection = document.getElementById('registration-form');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="py-20 bg-background relative">
       <div className="container mx-auto px-4">
@@ -35,6 +53,11 @@ export default function RegistrationSection() {
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Limited seats available. Register now to be part of this incredible innovation journey.
           </p>
+        </div>
+
+        {/* Hackathon Registration Form */}
+        <div className="mb-16 animate-on-scroll" id="registration-form">
+          <HackathonRegistrationForm />
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -103,7 +126,7 @@ export default function RegistrationSection() {
                 </div>
 
                 {/* Main Registration Button */}
-                <Button className="btn-hero w-full text-lg" onClick={() => window.open(qrCodeData, '_blank')}>
+                <Button className="btn-hero w-full text-lg" onClick={scrollToForm}>
                   <ExternalLink className="w-5 h-5 mr-2" />
                   Register Now
                 </Button>
@@ -111,29 +134,8 @@ export default function RegistrationSection() {
             </Card>
           </div>
 
-          {/* QR Code & Quick Actions */}
+          {/* Quick Actions */}
           <div className="space-y-8 animate-on-scroll">
-            {/* QR Code Card */}
-            <Card className="tech-card border-0 text-center">
-              <CardHeader>
-                <CardTitle className="text-xl font-bold text-foreground">Quick Registration</CardTitle>
-                <p className="text-muted-foreground">Scan to register instantly</p>
-              </CardHeader>
-              <CardContent>
-                <div className="w-48 h-48 mx-auto bg-white rounded-2xl flex items-center justify-center mb-6 p-4">
-                  <div className="w-full h-full bg-gray-900 rounded-xl flex items-center justify-center">
-                    <QrCode className="w-24 h-24 text-white" />
-                  </div>
-                </div>
-                <p className="text-sm text-muted-foreground mb-4">
-                  Scan with your phone camera to access the registration form
-                </p>
-                <Badge variant="outline" className="text-primary border-primary/50">
-                  Mobile Optimized
-                </Badge>
-              </CardContent>
-            </Card>
-
             {/* Quick Notify */}
             <Card className="tech-card border-0">
               <CardHeader>
@@ -154,7 +156,6 @@ export default function RegistrationSection() {
                       placeholder="your.email@example.com"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="mt-1"
                       required
                     />
                   </div>
@@ -162,6 +163,12 @@ export default function RegistrationSection() {
                     <Mail className="w-4 h-4 mr-2" />
                     Notify Me
                   </Button>
+                  {notifyError && (
+                    <div className="text-red-500 text-sm font-semibold text-center mt-2">{notifyError}</div>
+                  )}
+                  {notifySuccess && (
+                    <div className="text-green-500 text-sm font-semibold text-center mt-2">Signed up for notifications!</div>
+                  )}
                 </form>
               </CardContent>
             </Card>
@@ -178,18 +185,12 @@ export default function RegistrationSection() {
                     <span className="text-muted-foreground">Email: </span>
                     <span className="text-foreground">induj.mitblr2023@learner.manipal.edu</span>
                   </div>
-                  <div>
-                    <span className="text-muted-foreground">Email: </span>
-                    <span className="text-foreground">shivansh.mitblr2023@learner.manipal.edu</span>
-                  </div>
+                  
                   <div>
                     <span className="text-muted-foreground">Phone: </span>
                     <span className="text-foreground">+91 95694 06171</span>
                   </div>
-                  <div>
-                    <span className="text-muted-foreground">Phone: </span>
-                    <span className="text-foreground">+91 97013 03895</span>
-                  </div>
+                  
                   <div>
                     <span className="text-muted-foreground">WhatsApp Support: </span>
                     <span className="text-foreground">Available 24/7</span>
