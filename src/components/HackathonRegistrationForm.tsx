@@ -227,13 +227,13 @@ export default function HackathonRegistrationForm() {
           {showRules && (
             <div className="p-4 bg-zinc-900 rounded-b-xl border-x border-b border-zinc-800 shadow-xl flex flex-col gap-3 mt-1 animate-fade-in">
               <ul className="pl-2 text-zinc-300 text-base space-y-2 mb-1">
-                <li>👩‍💻 <b>Open to all UG & PG students across India</b> (teams of 2-4 members).</li>
+                <li>👩‍💻 <b>Open to all UG students across India</b> (teams of 2-4 members).</li>
                 <li>📅 <b>48-hour hackathon</b> → 25–27 Sept 2025 at MIT Bengaluru.</li>
                 <li>🔒 <b>Problem statements by Honeywell</b> (confidential, given on Day 1).</li>
                 <li>💡 <b>All work must be original</b> and created during the hackathon.</li>
                 <li>🛠️ <b>No use of AI/LLM tools</b> (ChatGPT, Copilot, etc.) unless permitted.</li>
                 <li>🏛️ <b>Respect MIT Bengaluru campus rules</b> & maintain discipline.</li>
-                <li>🏆 <b>Prizes worth ₹1.5 Lakhs</b> (Top 3 + Consolation awards).</li>
+                <li>🏆 <b>Prizes worth ₹1.75 Lakhs</b> (Top 3 + Consolation awards).</li>
                 <li>📝 <b>Jury’s decision is final and binding.</b></li>
               </ul>
               <label className="flex items-center gap-2 text-zinc-100 font-bold text-base bg-zinc-800 rounded-lg px-2 py-2 shadow border border-zinc-700">
