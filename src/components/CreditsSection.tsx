@@ -62,7 +62,7 @@ export default function CreditsSection() {
                             Prof. (Dr.) Narayana Sabhahit
                           </h3>
                           <p className="text-muted-foreground">
-                            Registrar, MAHE
+                            Pro Vice Chancellor, Technlogy & Sciences, MAHE
                           </p>
                         </div>
                       </div>
@@ -92,7 +92,7 @@ export default function CreditsSection() {
                             Prof. (Dr.) Raghavendra Prabhu
                           </h3>
                           <p className="text-muted-foreground">
-                            Deputy Registrar, MAHE Bengaluru
+                            Additional Registrar & Director Administration, MAHE Bengaluru
                           </p>
                         </div>
 
