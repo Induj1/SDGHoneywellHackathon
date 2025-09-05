@@ -62,7 +62,7 @@ export default function CreditsSection() {
                             Prof. (Dr.) Narayana Sabhahit
                           </h3>
                           <p className="text-muted-foreground">
-                            Pro Vice Chancellor, Technlogy & Sciences, MAHE
+                            Pro Vice Chancellor, Technlogy & Science, MAHE
                           </p>
                         </div>
                       </div>
