@@ -6,7 +6,7 @@ import aboutAerospace from '@/assets/about-aerospace.jpg';
 const aboutData = [
   {
     title: "About Honeywell",
-    icon: <Plane className="w-8 h-8 text-primary" />,
+    icon: <Cog className="w-8 h-8 text-primary" />,
     description: "A Fortune 100 technology company that invents and manufactures technologies to address tough challenges linked to global macro trends such as safety, security, and energy.",
     highlights: [
       "Global leader in aerospace technology",

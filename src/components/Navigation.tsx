@@ -104,7 +104,10 @@ export default function Navigation() {
                   className="btn-hero w-full"
                   onClick={() => {
                     setIsOpen(false);
-                    window.open('https://forms.gle/honeywellhackathon2025', '_blank');
+                    const section = document.getElementById('registration-form');
+                    if (section) {
+                      section.scrollIntoView({ behavior: 'smooth' });
+                    }
                   }}
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />

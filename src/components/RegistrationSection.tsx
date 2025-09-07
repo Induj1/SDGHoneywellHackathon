@@ -13,7 +13,7 @@ export default function RegistrationSection() {
 
   const registrationDeadline = "20th September 2025";
   
-  const qrCodeData = "https://forms.gle/honeywellhackathon2025"; // Placeholder URL
+  // Removed qrCodeData, now routing to registration section
 
   const [notifyError, setNotifyError] = useState('');
   const [notifySuccess, setNotifySuccess] = useState(false);
