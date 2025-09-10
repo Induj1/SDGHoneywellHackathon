@@ -201,24 +201,6 @@ export default function RegistrationSection() {
           </div>
         </div>
 
-        {/* Registration Stats */}
-        <div className="mt-16 animate-on-scroll">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            {[
-              { label: "Spots Available", value: "500+", color: "primary" },
-              { label: "Teams Expected", value: "125+", color: "secondary" },
-              { label: "Colleges Participating", value: "50+", color: "accent" },
-              { label: "Days to Event", value: "245", color: "primary" }
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className={`text-2xl md:text-3xl font-bold text-gradient-${stat.color} mb-2`}>
-                  {stat.value}
-                </div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
